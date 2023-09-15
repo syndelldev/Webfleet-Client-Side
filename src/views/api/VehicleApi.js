@@ -1,8 +1,8 @@
 /* eslint-disable */
 import axios from 'axios'
 // const url = 'https://webfleet-backend.sincprojects.com'
-const url = 'http://localhost:8010'
-// const url = 'http://13.43.59.115:8010'
+// const url = 'http://localhost:8010'
+const url = 'http://13.43.59.115:8010'
 
 export const addVehicle = async (user) => {
     try {

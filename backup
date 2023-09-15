@@ -1,0 +1,4 @@
+cd /var/www
+sudo rm -rf client_1
+sudo cp -r client client_1
+

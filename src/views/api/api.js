@@ -1,7 +1,7 @@
 /* eslint-disable */
 import axios from 'axios'
-const url = 'http://13.43.59.115:8010'
-// const url = 'http://localhost:8010'
+// const url = 'http://13.43.59.115:8010'
+const url = 'http://localhost:8010'
 
 //for lovin auth
 export const loginAuth = async (user) => {

@@ -46,7 +46,7 @@ function Conformpopup(props) {
     }
 
     // console.log(dataToSend,"send data")
-    const result = await addGarage(dataToSend).then((res) => {
+    const result = await addGarage(user).then((res) => {
       if (res.status === 200) {
         navigate('/maintenance/garage-list')
         // window.location.reload()

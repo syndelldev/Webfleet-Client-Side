@@ -1,0 +1,6 @@
+cd /var/www/client
+sudo npm install --ignore-scripts --no-audit
+sudo npm run build 
+cd /var/www
+sudo chown -R ubuntu:www-data client
+sudo systemctl restart apache2 

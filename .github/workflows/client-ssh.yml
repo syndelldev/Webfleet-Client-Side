@@ -33,7 +33,7 @@ jobs:
         run: ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts    
 
       - name: Copy Code to Remote Server
-        run: scp -r ./build "${{ secrets.SSH_USERNAME }}"@${{ secrets.SSH_IP }}:/var/www/html/client
+        run: scp -r ./build "${{ secrets.SSH_USERNAME }}"@${{ secrets.SSH_IP }}:/var/www/client
 
   
 

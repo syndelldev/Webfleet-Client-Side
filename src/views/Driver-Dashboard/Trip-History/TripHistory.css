@@ -1,0 +1,18 @@
+.Trip_menuOne_widget{
+    display: flex;
+    width: 60%;
+}
+.trip_menu_card{
+    width: 50%;
+    margin: 10px;
+    height: 130px;
+    background-color: #F7CFCE;
+    border-width: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.trip_card_data{
+    color: red;
+    font-size: 20px;
+    padding-top: 5px;
+}

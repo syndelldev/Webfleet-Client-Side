@@ -1,0 +1,62 @@
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px)  
+{
+  .user_cost{
+    width: 110px !important;
+  }
+  .user_post{
+    width: 90px !important;
+  }
+  .allUserTable{
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
+  .vehicle_type, .vehicletype_option {
+    font-size: 12px !important;
+  } 
+
+  .driverTrip_select{
+    font-size: 14px;
+  }
+
+  .profile_add_div{
+    height: 68px;
+  }
+
+  .profile_header{
+    flex-basis: 40% !important;
+  }
+
+  .profile_body{
+    flex-basis: 60%;
+  }
+    
+} 
+@media only screen   
+and (min-width: 1366px)   
+and (max-width: 1599px)  
+{
+  /* .user_cost{
+    width: 110px !important;
+  }
+  .user_post{
+    width: 90px !important;
+  } */
+  .allUserTable{
+    overflow-x: auto !important;
+    width: 100% !important;
+  }
+
+  .box-title{
+    font-size: 22px;
+  }
+
+  .profile_header{
+    flex-basis: 40% !important;
+  }
+
+  .profile_body{
+    flex-basis: 60%;
+  }
+} 

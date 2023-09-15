@@ -1,0 +1,2222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    background-color: #fff !important;
+    font-family: 'GalanoGrotesque' !important;
+}
+
+.px-3 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+
+
+.sidebar {
+    --cui-sidebar-width: 16rem;
+    --cui-sidebar-bg: #FF1E1C;
+    --cui-sidebar-bg: #ff1E1C;
+    --cui-sidebar-padding-x: 0;
+    --cui-sidebar-padding-y: 0;
+    --cui-sidebar-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-border-width: 0;
+    color: aliceblue !important;
+    --cui-sidebar-border-color: transparent;
+    --cui-sidebar-brand-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-brand-height: 4rem;
+    --cui-sidebar-brand-bg: rgba(0, 0, 21, 0.2);
+    --cui-sidebar-header-height: 4rem;
+    --cui-sidebar-header-bg: rgba(0, 0, 21, 0.2);
+    --cui-sidebar-header-padding-x: 1rem;
+    --cui-sidebar-header-padding-y: 0.75rem;
+    --cui-sidebar-footer-bg: rgba(0, 0, 21, 0.2);
+    --cui-sidebar-footer-height: auto;
+    --cui-sidebar-footer-padding-x: 1rem;
+    --cui-sidebar-footer-padding-y: 0.75rem;
+    --cui-sidebar-toggler-bg: rgba(0, 0, 21, 0.2);
+    --cui-sidebar-toggler-height: 3rem;
+    --cui-sidebar-toggler-indicator: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://https://www.w3.org/2000/svg%27 viewBox=%270 0 11 14%27%3E%3Cpath fill=%27%238a93a2%27 d=%27M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z%27/%3E%3C/svg%3E);
+    --cui-sidebar-toggler-indicator-width: 4rem;
+    --cui-sidebar-toggler-indicator-height: 3rem;
+    --cui-sidebar-toggler-hover-bg: rgba(0, 0, 0, 0.3);
+    --cui-sidebar-toggler-indicator-hover: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns=%27http://https://www.w3.org/2000/svg%27 viewBox=%270 0 11 14%27%3E%3Cpath fill=%27rgba%28255, 255, 255, 0.87%29%27 d=%27M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z%27/%3E%3C/svg%3E);
+    --cui-sidebar-narrow-width: 4rem;
+    --cui-sidebar-nav-title-padding-x: 1rem;
+    --cui-sidebar-nav-title-padding-y: 0.75rem;
+    --cui-sidebar-nav-title-margin-top: 1rem;
+    --cui-sidebar-nav-title-color: rgba(255, 255, 255, 0.6);
+    --cui-sidebar-nav-link-padding-x: 1rem;
+    --cui-sidebar-nav-link-padding-y: 0.8445rem;
+    /* --cui-sidebar-nav-link-color: rgba(255, 255, 255, 0.6); */
+    --cui-sidebar-nav-link-bg: transparent;
+    --cui-sidebar-nav-link-border-color: transparent;
+    --cui-sidebar-nav-link-border: 0 solid var(--cui-sidebar-nav-link-border-color);
+    --cui-sidebar-nav-link-border-radius: 0;
+    --cui-sidebar-nav-link-active-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-nav-link-active-bg: rgba(255, 255, 255, 0.05);
+    --cui-sidebar-nav-link-active-icon-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-nav-link-disabled-color: rgba(255, 255, 255, 0.38);
+    --cui-sidebar-nav-link-disabled-icon-color: rgba(255, 255, 255, 0.6);
+    --cui-sidebar-nav-link-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-nav-link-hover-bg: rgba(255, 255, 255, 0.05);
+    --cui-sidebar-nav-link-hover-icon-color: rgba(255, 255, 255, 0.87);
+    --cui-sidebar-nav-icon-width: 4rem;
+    --cui-sidebar-nav-icon-height: 1.25rem;
+    --cui-sidebar-nav-icon-font-size: 1.25rem;
+    --cui-sidebar-nav-link-icon-color: rgba(255, 255, 255, 0.6);
+    --cui-sidebar-nav-group-bg: rgba(0, 0, 0, 0.2);
+    --cui-sidebar-nav-group-items-padding-y: 0;
+    --cui-sidebar-nav-group-items-padding-x: 0;
+    --cui-sidebar-nav-group-indicator: url(data:image/svg+xml,%3csvg xmlns=%27http://https://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27rgba%28255, 255, 255, 0.6%29%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+    --cui-sidebar-nav-group-indicator-hover: url(data:image/svg+xml,%3csvg xmlns=%27http://https://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27rgba%28255, 255, 255, 0.87%29%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+    --cui-sidebar-nav-group-toggle-show-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    display: flex;
+    flex: 0 0 var(--cui-sidebar-width);
+    flex-direction: column;
+    order: -1;
+    width: var(--cui-sidebar-width);
+    padding: var(--cui-sidebar-padding-y) var(--cui-sidebar-padding-x);
+    color: var(--cui-sidebar-color);
+    background: var(--cui-sidebar-bg);
+    box-shadow: none;
+    transition: margin-left 0.15s, margin-right 0.15s, box-shadow 0.075s, transform 0.15s, width 0.15s, z-index 0s ease 0.15s;
+}
+
+.btn-primary {
+    --cui-btn-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-bg: transparent --cui-btn-border-color: transparent;
+    --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-hover-bg: transparent;
+    --cui-btn-hover-border-color: transparent;
+    --cui-btn-focus-shadow-rgb: 75, 58, 223;
+    --cui-btn-active-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-active-bg: transparent;
+    --cui-btn-active-border-color: transparent;
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+    --cui-btn-disabled-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-disabled-bg: transparent;
+    --cui-btn-disabled-border-color: transparent;
+}
+
+.driverbuttonsform {
+    background-color: #fff;
+    border: 1px solid #8D8D8D !important;
+    color: #8D8D8D !important;
+    border-radius: 10px;
+    padding: 7px 21px !important;
+    box-shadow: none !important;
+    /* margin-top: 20px; */
+    text-transform: capitalize;
+}
+
+.drivertablerows {
+    word-wrap: break-word;
+}
+
+.driverEditBtn {
+    background: #FF1E1C;
+    width: 37px;
+    height: 37px;
+    display: grid;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.sidebar-nav .nav-group-toggle::after {
+    display: block;
+    flex: 0 1 12px;
+    height: 0px;
+    content: "";
+    background-image: var(--cui-sidebar-nav-group-indicator);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.15s;
+    color: #fff;
+}
+
+.drivereditupdatebutton {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hh {
+    font-family: 'GalanoGrotesque' !important;
+}
+
+.driverbuttonssave {
+    box-shadow: 0 4px 9px -4px #ff1e1c !important;;
+    background-color: #FF1E1C;
+    color: #FFF !important;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px;
+    /* margin-top: 20px; */
+    padding: 0px 25px !important;
+    text-transform: capitalize;
+    border: none;
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: 24%;
+    display: flex;
+    align-items: center;
+}
+
+.searchiconeadd {
+    color: #C4C4C4;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-family: 'GalanoGrotesque' !important;
+    color: #000000;
+    font-weight: bold;
+}
+
+.css-1u9des2-indicatorSeparator {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    width: 1px;
+    background-color: transparent !important;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+/* .driverbuttonssave:hover {
+    background-color: #FF1E1C;
+    color: #FFF !important;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px;
+    margin-top: 20px;
+} */
+
+.formpaddaingdriver {
+    padding-top: 20px !important;
+    /* padding: 0px 26px; */
+    width: auto !important;
+    margin-left: 4% !important;
+}
+
+.formpaddaingdriveredit {
+    padding-top: 30px !important;
+    /* padding-left: 40px !important; */
+    padding-left: 4%;
+}
+
+.clossbutton .span {
+    font-size: 18px;
+}
+
+.header {
+    --cui-header-min-height: 4rem;
+    --cui-header-padding-x: 0.5rem;
+    --cui-header-padding-y: 0.5rem;
+    --cui-header-bg: #FF1E1C;
+    --cui-header-color: rgba(44, 56, 74, 0.681);
+    --cui-header-border-color: #d8dbe0;
+    --cui-header-border: 1px solid var(--cui-header-border-color);
+    --cui-header-hover-color: rgba(44, 56, 74, 0.95);
+    --cui-header-disabled-color: rgba(44, 56, 74, 0.38);
+    --cui-header-active-color: rgba(44, 56, 74, 0.95);
+    --cui-header-brand-padding-y: 0.3125rem;
+    --cui-header-brand-color: #4f5d73;
+    --cui-header-brand-hover-color: #475468;
+    --cui-header-toggler-padding-x: 0.75rem;
+    --cui-header-toggler-padding-y: 0.25rem;
+    --cui-header-toggler-bg: transparent;
+    --cui-header-toggler-color: rgba(44, 56, 74, 0.681);
+    --cui-header-toggler-border-radius: 0.375rem;
+    --cui-header-toggler-hover-color: rgba(44, 56, 74, 0.95);
+    --cui-header-toggler-icon-bg: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://https://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27rgba%2844, 56, 74, 0.681%29%27 stroke-width=%272.25%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E);
+    --cui-header-toggler-hover-icon-bg: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://https://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27rgba%2844, 56, 74, 0.95%29%27 stroke-width=%272.25%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E);
+    --cui-header-nav-link-padding-x: 0.5rem;
+    --cui-header-nav-link-padding-y: 0.5rem;
+    --cui-header-divider-border-color: #d8dbe0;
+    --cui-header-divider-border: 1px solid var(--cui-header-divider-border-color);
+    --cui-subheader-min-height: 3rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--cui-header-min-height);
+    padding: var(--cui-header-padding-y) var(--cui-header-padding-x);
+    background: var(--cui-header-bg);
+    border-bottom: var(--cui-header-border);
+}
+
+element.style {}
+
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 150px !important;
+}
+
+.css-11w94w9-MuiTableCell-root {
+    font-family: 'GalanoGrotesque' !important;
+    /* font-weight: 400; */
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    text-align: left;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    width: 150px !important;
+}
+
+.drivereditedbox {
+    width: 92%;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    top: 260px;
+    right: 0;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 9%);
+}
+.driver_edit_main_div{
+    width: 92%;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    top: 22%;
+    right: 0;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 9%);
+}
+.driver_add_main_div{
+    width: 92%;
+    margin: 4%;
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    top: 22%;
+    right: 0;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 9%);
+}
+
+.container-lg {
+    max-width: 100% !important;
+}
+
+/* -------------------------- profile screen start css ------------------- */
+.supportDivprofile {
+    box-sizing: border-box;
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    background: #F6F1F1;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 9%);
+    max-width: 100% !important;
+    padding: 1.2rem;
+}
+.avatar-img{
+    width: 40px;
+    height: 40px;
+    /* padding-top: 9px; */
+    align-items: center;
+}
+.editprofilebuttonrow{
+    width: 100%;
+    margin-left: 10px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+.editprofilebuttonrow button{
+    background: #FF1E1C;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 30px;
+    /* width: 125px; */
+}
+.editcontenoruserbox{
+    margin-top: 40px;
+    position: relative;
+}
+
+.profilename {
+    font-size: 24px;
+    margin: 20px 0px;
+    color: #FF1E1C;
+    font-weight: bold;
+}
+
+.accordion-button {
+    background: #FF1E1C;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 13px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #FF1E1C;
+    font-size: 16px;
+    color: #FFFFFF;
+    height: auto !important;
+    border-radius: 5px;
+}
+
+.profilerow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #F8E3E3;
+    height: 39px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 7px 0px;
+    padding: 0px 26px;
+}
+.accordion-body {
+    padding: 0px;
+}
+.profilecollaman{
+    width: 50%;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.input_fieldprofile:focus{
+    background: #F8E3E3 !important;
+    color: #000000;
+    font-size: 12px;
+    border: none;
+}
+.input_fieldprofile{
+    background: #F8E3E3;
+    border: none !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.accordion-item{
+    border: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../assets/images/Group 1000006172.svg');
+    transform: none;
+    height: 10px;
+}
+.accordion-button:after {
+    flex-shrink: 0;
+    width: var(--mdb-accordion-btn-icon-width);
+    height: 10px;
+    margin-left: auto;
+    content: "";
+    background-image: url('../assets/images/Group 1000006172.svg') !important;
+    background-repeat: no-repeat;
+    background-size: var(--mdb-accordion-btn-icon-width);
+    transition: var(--mdb-accordion-btn-icon-transition);
+}
+/* .accordion-button:not(.collapsed) {
+    background-image: url('../assets/images/Group 1000006172.svg');
+    transform: none;
+    height: 10px;
+} */
+
+/* -------------------------- profile screen start end ------------------- */
+
+/* -----------------sidebar backgroun color------------------- */
+.nav-group-toggle {
+    color: var(--cui-sidebar-nav-group-toggle-show-color);
+    background: #FF1E1C !important;
+}
+
+/* 
+.sidebar-nav .nav-link.active {
+    background: #000000 !important;
+    width: 100%;
+    height: 43px;
+    margin-left: 23%;
+    padding-right: 46%;
+    display: flex;
+    border-radius: 50px 0px 0px 50px;
+    justify-content: space-evenly;
+} */
+.nav-groupli .a:nth-child(1) {
+    background: #000000 !important;
+    width: 100%;
+    height: 43px;
+    margin-left: 23%;
+    padding-right: 46%;
+    display: flex;
+    border-radius: 50px 0px 0px 50px;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    color: #fff !important;
+    background: #FF1E1C;
+}
+
+/* -------------------------------------- dacenord csss-------------------- */
+.boxpoints {
+    background: #fff;
+    border-radius: 50px;
+    background: #fff;
+    border-radius: 50px;
+    /* padding: 5%; */
+    height: 50px;
+    width: 50px;
+    display: grid;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'GalanoGrotesque' !important;
+    justify-items: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'GalanoGrotesque' !important;
+    color: #FF1E1C;
+}
+
+.boxpoints2 {
+    background: #fff;
+    border-radius: 50px;
+    padding: 5%;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'GalanoGrotesque' !important;
+
+
+}
+
+.boxpoints3 {
+    background: #fff;
+    border-radius: 50px;
+    padding: 5% 8%;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'GalanoGrotesque' !important;
+}
+
+/* User Management screen ---------------------- */
+/* .tablecelllast {
+    display: flex;
+    height: 61px;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 1.2rem 0.5rem !important ;
+} */
+
+/* / ----------------------------- loader css---------------------------------- / */
+.spinner {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 8px solid;
+    border-color: #FF1E1C transparent #FF1E1C transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+/* Glitch Effect solved */
+.sidebar-nav .nav-link {
+    transition: background 0.000000001s ease, color 0.15s ease;
+}
+
+.loader-container {
+    width: 92%;
+    height: 92vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    background-color:#FFF !important;
+    z-index: 10 !important;
+}
+.loader-container-main-screen{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color:#FFF !important;
+    z-index: 1000 !important;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: var(--cui-modal-title-line-height);
+    padding: 28px 0px;
+}
+
+.loader-containersss {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.vihicalasign {
+    width: 195px;
+    font-size: 15px;
+    font-weight: 600 !important;
+    font-family: 'GalanoGrotesque' !important;
+    color: #000000;
+}
+
+
+
+.spinnerss {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 3px solid;
+    border-color: #FF1E1C transparent #FF1E1C transparent;
+    border-radius: 50%;
+    animation: spin-anim 1s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.driverrounded {
+    /* font-weight: 700; */
+    align-items: center;
+    width: 450px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.graphselect svg {
+    position: relative !important;
+    width: 38% !important;
+    margin-left: -34px !important;
+    height: 12% !important;
+    /* background: #FF1E1C; */
+    flex: none;
+    padding-right: 0px !important;
+    order: 1;
+    margin-top: 2px;
+    flex-grow: 0;
+    color: red !important;
+    /* margin-left: 64%; */
+    size: 20%;
+    z-index: 10;
+}
+
+.chartrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 14px 0px 0px;
+}
+
+/* / ------------------------------------ table hadding css ----------------- / */
+.drivertablehadding {
+    width: 130px;
+    font-size: 14px;
+    font-family: 'GalanoGrotesque';
+    font-weight: bold !important;
+    color: #000000;
+}
+
+.drivertablerows {
+    width: 100px;
+    font-size: 12px;
+    font-family: 'GalanoGrotesque';
+    vertical-align: middle;
+}
+
+.css-177gid-MuiTableCell-root {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    /* font-weight: 400; */
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    display: table-cell;
+    vertical-align: inherit;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    text-align: right;
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.icon:not(.icon-c-s):not(.icon-custom-size).icon-lg {
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar .MuiTablePagination-actions {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 8px;
+    margin-top: -16px;
+}
+
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.26);
+    border: 1px solid #8D8D8D;
+    border-radius: 0px;
+    border-radius: 5px;
+    height: 28px;
+    width: 29px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.boxcontenttext {
+    font-family: 'GalanoGrotesque' !important;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dasesidecontent {
+    text-align: right;
+}
+
+/* ---------------------------- text content color fix ---------------------- */
+.fontstylefast {
+    color: #00CD73;
+    background: #D3FBE9;
+    border-radius: 50px;
+}
+
+.fontstyletext {
+    color: #006ED4;
+    background: rgb(0 110 212 / 34%);
+    border-radius: 50px;
+}
+
+.fontstyletext2 {
+    color: #BC6810;
+    background: #ed94368c;
+    border-radius: 50px;
+}
+
+.fontstyletext3 {
+    color: #FF493E;
+    background: #ff493e69;
+    border-radius: 50px;
+}
+
+.fontstyletext4 {
+    color: #BC6810;
+    background: #f4e54473;
+    border-radius: 50px;
+}
+
+/* ---------------------------- text content color fix ---------------------- */
+.css-1mxz8qt-MuiPaper-root {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    width: 98% !important;
+    margin-bottom: 16px;
+    margin-left: 13px;
+}
+
+
+
+/* / -----------------------------popup css ----------------------- / */
+.EditconfoBox {
+    width: 27.5%;
+    margin: auto;
+    position: fixed;
+    text-align: center;
+    top: 39%;
+    left: 43%;
+    height: 200px;
+    background: #e2e0e0 !important;
+    border-radius: 10px;
+    z-index: 10;
+    border: 1px solid #8D8D8D;
+}
+
+.editcontent {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.51);
+    width: -webkit-fill-available;
+    top: 0%;
+    height: -webkit-fill-available;
+}
+
+.userinputlast {
+    width: 100% !important;
+}
+
+.editcontenthad {
+    height: 150px;
+    display: grid;
+    padding: 2%;
+    align-items: center;
+}
+
+----------------------
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+.edithade {
+    font-family: "lato";
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.editlinksbox {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    border-top: 1px solid #c2c2c2;
+}
+
+
+.submanual {
+    border: none;
+    background: none;
+}
+
+.css-pdct74-MuiTablePagination-selectLabel {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    /* font-weight: 400; */
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: none;
+}
+
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 0.5em);
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.54);
+    display: none;
+}
+
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    /* font-weight: 400; */
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: inherit;
+    font-size: inherit;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 32px;
+    margin-left: 8px;
+    display: none !important;
+}
+
+.css-1psng7p-MuiTablePagination-spacer {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    display: none;
+    flex: 1 1 100%;
+}
+
+.breadcrumb {
+    width: 100%;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    padding: 0% 1%;
+    align-items: center;
+    background: white;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding-right: 5%;
+}
+
+.breadcrumb li {
+    /* font-weight: 500; */
+}
+.userDiv {
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    height: auto !important;
+
+}
+
+.breadcrumb li:hover {
+    /* font-weight: 500; */
+    color: #157A83;
+}
+
+.css-8atqhb {
+    width: 100%;
+    margin-top: 49px;
+}
+
+.nevsidebutton {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebutton {
+    width: 42px;
+    height: 49px;
+    border: none;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.addvihical {
+    width: 118px;
+    height: 49px;
+    /* / -----------------------------Driver add screen ----------------------- / */
+}
+
+.drivereditbox {
+    width: 78%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 14%;
+    right: 1%;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.drivereditboxedit {
+    /* width: 78%; */
+    width: 92%;
+    margin: auto;
+    margin-top: 70px;
+    position: absolute;
+    text-align: center;
+    top: 185px;
+    right: 3.8%;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 9%);
+}
+
+.sidemenubarvihical {
+    width: 295px !important;
+    display: flex !important;
+    vertical-align: middle !important;
+    align-items: center !important;
+    font-size: 12px !important;
+    margin-bottom: -1px !important;
+}
+
+.Adddriverhadding {
+    font-family: 'GalanoGrotesque';
+    width: 100%;
+    text-align: left;
+    background: #FF1E1C;
+    font-size: 18px;
+    height: 50px;
+    padding-left: 20px;
+    position: absolute;
+    /* font-weight: 500; */
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.Descriptionlables {
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.topping {
+    display: flex;
+    width: 154px;
+    font-weight: bold;
+    color: #000;
+}
+
+.checkboxfild {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8D8D8D;
+    box-shadow: 0px 4px 125px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxfild:checked~.checkmark {
+    background-color: #000 !important;
+}
+
+textarea {
+    width: 100% !important;
+    height: 60px !important;
+    border-radius: 8px !important;
+    padding: 1% !important;
+    border: 1px solid var(--cui-form-select-border-color, #b1b7c1);
+}
+
+.Adddriverhadding span {
+    /* padding-left: 5px; */
+}
+
+
+
+.editanddeleteicone {
+    display: flex;
+
+}
+
+.editanddeleteicone button {
+    border: none;
+    color: #fff;
+    background: none;
+    /* font-weight: 400; */
+}
+
+.editcontentupload {
+    position: absolute;
+    background: #252222a1;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    top: 0%;
+    z-index: 10;
+}
+
+.buttondriver {
+    display: flex;
+    justify-content: end;
+    /* margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: -4.9%; */
+    margin: 2% 0 2% -4.9%;
+
+}
+.profile_edit_bottom_btn{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    padding-right: 52px;
+}
+
+/* nevbar button togal  */
+.header-toggler {
+    padding: var(--cui-header-toggler-padding-y) var(--cui-header-toggler-padding-x);
+    font-size: 1.25rem;
+    color: var(--cui-header-toggler-color);
+    background-color: var(--cui-header-toggler-bg);
+    border: 0;
+    border-radius: var(--cui-header-toggler-border-radius);
+    display: none;
+}
+
+/* 
+/ -----------------------------Driver List screen ----------------------- / */
+.driverpagination {
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.header-sticky {
+    margin-bottom: 0.0 !important;
+}
+
+.flex-grow-1 {
+    background-color: #fff !important;
+}
+
+.rounded {
+    border-radius: var(--cui-border-radius) !important;
+    width: 20%;
+    height: 50px !important;
+    margin-right: 20px;
+}
+
+.alldriverTable {
+    margin-top: 30px !important;
+    margin-bottom: 0px !important;
+}
+
+.scomanubar {
+    width: 159px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #ECEEF7;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+.pagination {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav .nav-link {
+    padding: var(--cui-header-nav-link-padding-y) var(--cui-header-nav-link-padding-x);
+    color: #fff !important;
+}
+
+
+
+/* 
+/ ----------------------------vehicle screen css ----------------------------- / */
+.vehiclehtablehadding {
+    width: 225px;
+}
+
+.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+    min-height: 52px;
+    padding-right: 2px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile_edit_inputs{
+    width: 97%;
+    margin: auto;
+  
+    height: auto !important;
+}
+
+
+
+/* / -------------------------------------media query start -------------------------------------------- /
+
+/ ------------------------------------- Laptop device -------------------------------------------- / */
+
+/* @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    .driver_add_main_div {
+      width: 75%;
+    }
+  } */
+
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1450px) {
+    .breadcrumb {
+        width: 100%;
+        height: 50px;
+        list-style: none;
+        display: flex;
+        padding: 0% 0%;
+        align-items: center;
+        background: white;
+        justify-content: space-between;
+        border-radius: 4px;
+        padding-right: 0%;
+    }
+
+    .driverbuttonssave {
+        background-color: #FF1E1C;
+        color: #FFF !important;
+        border-radius: 10px;
+        box-shadow: 0px 4px 125px;
+        /* margin-top: 20px; */
+        /* padding: 0px 25px !important; */
+      
+        border: none;
+    }
+    .driverbuttonsform {
+        background-color: #fff;
+        border: 1px solid #8D8D8D !important;
+        color: #8D8D8D !important;
+        border-radius: 10px;
+        /* padding: 0px 25px !important; */
+        /* margin-top: 20px; */
+      
+    }
+
+    .buttondriver {
+        display: flex;
+        justify-content: end;
+        /* margin-bottom: 5px; */
+    }
+
+    .drivereditedbox {
+        width: 68px !important;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .sidemenubarvihical {
+        width: 300px !important;
+        display: flex !important;
+        vertical-align: middle !important;
+        align-items: center !important;
+        font-size: 12px !important;
+    }
+
+    .vihicalasign {
+        width: 280px ;
+        font-size: 14px;
+        font-weight: 600 !important;
+        font-family: 'Lato' !important;
+        color: #000000;
+    }
+
+    .userinputs {
+        margin-top: 4px;
+        width: 50% !important;
+    }
+
+    .formpaddaingdriver {
+        /* padding-top: 11% !important; */
+        height: auto !important;
+        overflow-y: auto;
+        padding: 0px 0px;
+    }
+
+    .formpaddaingdriveredit {
+        padding-top: 20px !important;
+        margin-top: -9px;
+        padding: 0px 45px;
+        padding-right: 0px;
+    }
+
+    .drivereditbox {
+        width: 78%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: 10%;
+        right: 1%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .drivereditboxedit {
+        width: 86%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 14%;
+        right: 7%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    .editcontent {
+        position: absolute;
+        width: -webkit-fill-available;
+        margin: auto !important;
+        top: 0%;
+        height: -webkit-fill-available;
+    }
+
+    .userDiv {
+        width: auto;
+        margin: auto;
+        margin-top: 20px;
+        height: auto !important;
+
+    }
+
+    .textMenu {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #FF1E1C;
+        font-family: Lato;
+        font-size: 20px !important;
+        width: 220px !important;
+        /* font-weight: 600; */
+        line-height: 50px !important;
+        letter-spacing: 0em;
+    }
+
+
+
+    .driversidebar {
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding: 0px 27px;
+    }
+
+    .allUserTable {
+        width: 100%;
+        /* overflow-x: auto; */
+    }
+
+    .container-lg {
+        max-width: 100% !important;
+        padding-top: 15px;
+    }
+
+    .drivertablehadding {
+        width: 170px;
+        font-size: 14px;
+        font-family: 'GalanoGrotesque' !important;
+        /* font-weight: 600 !important; */
+    }
+
+    .drivertablerows {
+        width: 100px;
+        font-size: 12px;
+        font-family: 'GalanoGrotesque' !important;
+        vertical-align: middle;
+        word-wrap: break-word;
+    }
+
+    .drivereditbox {
+        width: 75%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: 11%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    .drivereditboxedit {
+        width: 86%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 14%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    
+    .driver_add_main_div{
+        top: 18%;
+    }
+
+    .breadcrumb {
+        padding: 0px 2% !important;
+    }
+
+    .css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar {
+        padding-left: 0px !important;
+        padding-right: 24px;
+    }
+
+    .nevsidebutton {
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_card {
+        width: 210px;
+        margin: 10px;
+        height: 110px;
+        background-color: rgba(21, 122, 131, 0.3);
+        border-width: 0px;
+        text-align: center;
+    }
+
+
+    .sidebutton {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+
+    .addvihical {
+        width: 85px;
+        height: 35px;
+        font-family: 'GalanoGrotesque';
+        background: linear-gradient(90.13deg, #1C3835 4.86%, #018592 99.94%);
+        box-shadow: 0px 4px 125px rgb(0 0 0 / 13%);
+        border-radius: 10px;
+        color: #fff;
+        border: none;
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+
+
+
+    .simplebar-mask {
+        direction: inherit;
+        position: absolute;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: auto !important;
+        z-index: 0;
+        height: 100vh !important;
+    }
+
+    .simplebar-content {
+        height: auto;
+        height: -webkit-fill-available !important;
+        padding-top: 21px !important;
+    }
+
+    .topbar {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .rounded {
+        border-radius: var(--cui-border-radius) !important;
+        width: 24%;
+        height: 30px !important;
+        margin-right: 7px;
+    }
+
+    .icon:not(.icon-c-s):not(.icon-custom-size).icon-lg {
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .scomanubar {
+        width: 97px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #ECEEF7;
+        box-shadow: 0px 20px 60px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        text-decoration: none;
+        margin: 0px 20px;
+        font-size: 13px;
+    }
+
+    .pagination {
+        width: 170px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0px;
+    }
+
+    /* .css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        -webkit-flex-direction: inherit;
+        -ms-flex-direction: inherit;
+        flex-direction: inherit;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: left;
+    } */
+
+
+
+
+
+
+}
+
+
+
+/* / ------------------------------------------------- teb & ipad device ------------------------------------ / */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    .boxcontenttext {
+        font-family: 'GalanoGrotesque' !important;
+        color: #000000;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .breadcrumb {
+        width: 100%;
+        height: 50px;
+        list-style: none;
+        display: flex;
+        padding: 0% 0%;
+        align-items: center;
+        background: white;
+        justify-content: space-between;
+        border-radius: 4px;
+        padding-right: 0%;
+    }
+    .loader-container {
+        width: 70%;
+        height: 85vh;
+    }
+  
+    .driverbuttonssave {
+        background-color: #FF1E1C;
+        color: #FFF !important;
+        border-radius: 10px;
+        box-shadow: 0px 4px 125px;
+        margin-top: 20px;
+        /* padding: 0px 25px !important; */
+    
+        border: none;
+    }
+    .driverbuttonsform {
+        background-color: #fff;
+        border: 1px solid #8D8D8D !important;
+        color: #8D8D8D !important;
+        border-radius: 10px;
+        /* padding: 7px 21px !important; */
+
+        margin-top: 20px;
+    
+    }
+
+    .drivereditedbox {
+        width: 68px !important;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .driver_add_main_div{
+        top: 20%;
+    }
+
+    .formpaddaingdriver {
+      
+        height: auto !important;
+        overflow-y: auto;
+    }
+
+    .formpaddaingdriveredit {
+        padding-top: 30px !important;
+        height: auto !important;
+        overflow-y: auto;
+    }
+
+
+
+    .d-md-flex {
+        display: flex !important;
+    }
+
+
+    .searchBarHeader {
+        margin: 0 0 0 20px;
+        height: 39px;
+        width: 253px !important;
+        border-radius: 50px;
+        background-color: #FF1E1C;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+
+    }
+
+
+    .header-toggler {
+        padding: var(--cui-header-toggler-padding-y) var(--cui-header-toggler-padding-x);
+        font-size: 1.25rem;
+        color: var(--cui-header-toggler-color);
+        background-color: var(--cui-header-toggler-bg);
+        border: 0;
+        border-radius: var(--cui-header-toggler-border-radius);
+        display: block;
+    }
+
+    .driverrounded {
+        /* font-weight: 700; */
+        align-items: center;
+        width: 98% !important;
+    }
+
+    .vihicalasign {
+        width: 195px ;
+        font-size: 12px !important;
+        font-family: 'GalanoGrotesque' !important;
+    }
+
+    .drivereditbox {
+        width: 65%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: 9%;
+        right: 1%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+        padding-top: 4%;
+    }
+
+    .drivereditboxedit {
+        width: 65%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 9%;
+        right: 1%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+        padding-top: 4%;
+    }
+
+    .userDiv {
+        width: auto;
+        margin: auto;
+        /* margin-top: 46px; */
+        height: auto !important;
+
+    }
+
+    .drivertablehadding {
+        width: 120px ;
+        font-size: 12px !important;
+        font-family: 'Lato' !important;
+        /* font-weight: 600 !important; */
+    }
+
+    .drivertablerows {
+        width: 5% !important;
+        font-size: 8px !important;
+        font-family: 'GalanoGrotesque' !important;
+        vertical-align: middle !important;
+    }
+
+    .sidemenubarvihical {
+        width: 300px !important;
+        display: flex !important;
+        vertical-align: middle !important;
+        align-items: center !important;
+        font-size: 8px !important;
+    }
+
+    .EditconfoBox {
+        width: 35%;
+        margin: auto;
+        position: fixed;
+        text-align: center;
+        top: 31%;
+        left: 33%;
+        height: 200px;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    .nevsidebutton {
+        width: 155px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebutton {
+        width: 35px;
+        height: 35px;
+    }
+
+
+
+    .topbar {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .rounded {
+        border-radius: var(--cui-border-radius) !important;
+        width: 100%;
+        height: 30px !important;
+    }
+
+    .icon:not(.icon-c-s):not(.icon-custom-size).icon-lg {
+        width: 1.25rem;
+        height: 1.25rem;
+        font-size: 1.25rem;
+        color: #fff;
+    }
+
+    .scomanubar {
+        width: 97px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #ECEEF7;
+        box-shadow: 0px 20px 60px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        text-decoration: none;
+        margin: 14px 11px;
+        font-size: 13px;
+    }
+
+    .pagination {
+        width: 170px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+    }
+
+
+}
+
+
+/* ---------------------------------------------- mobile device -------------------------------------------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .bg-light {
+        --cui-bg-opacity: 1;
+        background-color: rgba(var(--cui-light-rgb), var(--cui-bg-opacity)) !important;
+        position: absolute;
+        top: 0%;
+    }
+    .supportDivprofile {
+        width: 100%;
+
+    }
+    .driverbuttonssave {
+        background-color: #FF1E1C;
+        color: #FFF !important;
+        border-radius: 10px;
+        box-shadow: 0px 4px 125px;
+        margin-top: 20px;
+        padding: 0px 25px !important;
+   
+        border: none;
+    }
+    .loader-container {
+        width: 100%;
+        height: 100vh;
+    }
+    .driverbuttonsform {
+        background-color: #fff;
+        border: 1px solid #8D8D8D !important;
+        color: #8D8D8D !important;
+        border-radius: 10px;
+        padding: 7px 21px !important;
+
+        margin-top: 20px;
+
+    }
+
+    .drivereditedbox {
+        width: 68px !important;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: 14%;
+        right: 1%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .nevsidebutton {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .userinputs {
+        margin-top: 4px;
+        width: 100% !important;
+    }
+
+    .drivertablehadding {
+        width: 120px ;
+        font-size: 15px;
+        font-family: 'GalanoGrotesque';
+        /* font-weight: 600 !important; */
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100% !important;
+    }
+
+    .userDiv {
+        width: auto;
+        margin: auto;
+        /* margin-top: 25px; */
+        overflow-y: auto;
+        height: 650px;
+    }
+
+    .sidebutton {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 8px;
+        display: grid;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+
+    .addvihical {
+        width: 80px;
+        height: 35px;
+        font-family: 'GalanoGrotesque';
+        background: linear-gradient(90.13deg, #1C3835 4.86%, #018592 99.94%);
+        box-shadow: 0px 4px 125px rgb(0 0 0 / 13%);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 11px;
+        border: none;
+        margin: 0px 10px;
+    }
+
+    .topbar {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .rounded {
+        border-radius: var(--cui-border-radius) !important;
+        width: 50%;
+        height: 35px !important;
+    }
+
+    .scomanubar {
+        width: 140px;
+        height: 36px;
+        background: #FFFFFF;
+        border: 1px solid #ECEEF7;
+        box-shadow: 0px 20px 60px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        text-decoration: none;
+        margin: 7px 20px;
+    }
+
+    .pagination {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 4px;
+    }
+
+    .page-link {
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        padding: 0px;
+        display: grid;
+        align-items: center;
+    }
+
+    .buttonscorlinngtab {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+}
+
+/* ---------------------------------------------- Short screen mobile device -------------------------------------------- */
+@media only screen and (min-device-width : 280px) and (max-device-width : 319px) {}
+
+
+
+@media screen and (min-width : 320px) and (max-width : 767px) {
+    .drivertablerows {
+        word-wrap: break-word;
+        width: 118px !important;
+    }
+    .profilecollaman{
+        
+        font-size: 10px;
+    
+    }
+    .accordion-button:not(.collapsed){
+        font-size: 12px;
+    }
+    .accordion-button{
+        font-size: 12px;
+    }
+    .formpaddaingdriver {
+        padding-top: 73px !important;
+        padding: 0px 33px;
+        margin: 0px;
+    }
+
+    .formpaddaingdriveredit {
+        padding-top: 73px !important;
+        margin: 0px;
+        padding: 0px 33px;
+    }
+    .boxcontenttext {
+        font-family: 'GalanoGrotesque' !important;
+        color: #000000;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .driverrounded {
+        /* font-weight: 700; */
+        align-items: center;
+        width: 98% !important;
+        height: 37px;
+    }
+
+    .vihicalasign {
+        width: 195px ;
+        font-size: 12px !important;
+        font-family: 'GalanoGrotesque' !important;
+    }
+
+    .d-none {
+        display: block !important;
+        width: 0%;
+        margin-left: -27px;
+    }
+
+    .hh {
+        background: transparent !important;
+        /* Width: 100%; */
+        Height: 0px;
+        margin-top: 21px;
+        margin-bottom: 50px;
+        font-family: 'GalanoGrotesque' !important;
+        /* font-Weight: 500; */
+        font-Size: 24px;
+        Line-height: 22.97px;
+        color: #FF1E1C;
+    }
+
+    .EditconfoBox {
+        width: 94%;
+        margin: auto;
+        position: fixed;
+        text-align: right;
+        top: 39%;
+        left: 3%;
+        height: 200px;
+        background: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    .sidebar:not(.sidebar-end)~* {
+        --cui-sidebar-occupy-start: 0 !important;
+        position: absolute;
+        top: 0%;
+    }
+
+    .sidemenubarvihical {
+        width: 300px !important;
+        display: flex !important;
+        vertical-align: middle !important;
+        align-items: center !important;
+        font-size: 12px !important;
+        font-weight: 500;
+    }
+
+
+    .sidebar {
+        height: 100vh;
+    }
+
+    .sidebar-brand {
+        display: flex;
+        flex: 0 0 var(--cui-sidebar-brand-height);
+        align-items: center;
+        justify-content: center;
+        color: var(--cui-sidebar-brand-color);
+        background: #FF1E1C;
+        width: 100%;
+        margin: auto;
+        display: grid !important;
+    }
+
+    .header-brand {
+        padding-top: var(--cui-header-brand-padding-y);
+        padding-bottom: var(--cui-header-brand-padding-y);
+        font-size: 1.25rem;
+        color: var(--cui-header-brand-color);
+        text-decoration: none;
+        white-space: nowrap;
+        display: none;
+    }
+
+    .dashboardCardOne {
+        flex-basis: 100%;
+        padding: 10% 0% 0px 0 !important;
+    }
+
+    .searchBarHeader {
+        width: 107px !important;
+        font-size: 10px;
+        height: 30px !important;
+    }
+
+    canvas {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .header-toggler {
+        padding: var(--cui-header-toggler-padding-y) var(--cui-header-toggler-padding-x);
+        font-size: 1.25rem;
+        color: var(--cui-header-toggler-color);
+        background-color: var(--cui-header-toggler-bg);
+        border: 0;
+        border-radius: var(--cui-header-toggler-border-radius);
+        display: block;
+    }
+
+    .drivereditbox {
+        width: 94%;
+        margin: auto;
+        position: relative;
+        text-align: center;
+        top: 13%;
+        right: 0%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .drivereditboxedit {
+        width: 94%;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        top: 13%;
+        right: 0%;
+        height: auto;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .Adddriverhadding {
+        font-family: 'GalanoGrotesque';
+        width: 100%;
+        text-align: left;
+        background: #FF1E1C;
+        font-size: 18px;
+        height: 57px;
+        padding-left: 8px;
+        position: absolute;
+        /* font-weight: 500; */
+        color: #fff;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .Adddriverhadding span {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .userDiv {
+        width: auto;
+        margin: auto;
+        /* margin-top: 25px; */
+        overflow-y: auto;
+        height: 650px;
+        padding-bottom: 10px;
+    }
+}
+
+.user_managemnet_text{
+    margin-left: 20px;
+}

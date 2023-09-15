@@ -1,0 +1,48 @@
+[
+    {
+      "device_ident": 1,
+      "lat": 23.0368,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 2,
+      "lat": 23.0468,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 3,
+      "lat": 23.0768,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 4,
+      "lat": 23.0968,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 5,
+      "lat": 23.1268,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 6,
+      "lat": 23.1468,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 7,
+      "lat": 23.1268,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 8,
+      "lat": 23.1068,
+      "log": 72.5613
+    },
+    {
+      "device_ident": 9,
+      "lat": 23.0368,
+      "log": 72.5600
+    }
+  ]
+  

@@ -1,0 +1,26 @@
+@media only screen   
+and (min-device-width : 641px)   
+and (max-device-width : 767px)  
+{ 
+    .user_cost{
+        width: 110px !important;
+      }
+      .user_post{
+        width: 90px !important;
+      }
+    .allUserTable{
+        overflow-x: auto !important;
+        width: 100% !important;
+      }
+      .user_input_password .invalid-feedback {
+        display: none;
+        position: relative;
+       
+        top:0%;
+        font-size: 0.875em;
+        color: #e55353;
+    }
+    .report_download_btn{
+      margin-left: -3px !important;
+    }
+} 

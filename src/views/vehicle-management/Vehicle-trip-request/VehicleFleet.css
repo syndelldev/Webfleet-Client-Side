@@ -1,0 +1,139 @@
+.vehicleFeet_main_div{
+    width: 95%;
+    margin: auto;
+}
+.vehicleFeet_main_h1{
+    margin-left: 0rem !important;
+}
+.vehiclefleet_location_inputs{
+    border: 2px solid #FF1E1C;;
+    border-radius: 7px;
+    margin-right: 10px;
+    padding: 7px;
+}
+.vehiclefleet_Vehicle_inputs_end{
+    margin-left: 50px;
+}
+.vehiclefleet_location_button{
+    color: #ffff;
+    background: #FF1E1C;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 8px 12px;
+}
+.vehiclefleet_location_inputs::placeholder {
+    color: #808080;
+    text-align: left;
+    opacity: 0.5;
+    font-size: 15px;
+}
+.vehiclefleet_location_h1{
+    font-size: 19px;
+    color: #FF1E1C;
+    opacity: .8;
+    margin-top: 50px;
+  
+}
+.vehiclefleet_noLocation_span{
+    position: absolute;
+    top: 75px;
+    color: #FF1E1C;
+}
+.vehiclefleet_Location_found_span{
+    position: absolute;
+    top: 75px;
+    color: #92d231;
+}
+/* .vehiclefleet_Vehicle_div{
+    margin-top: 50px;
+} */
+.vehiclefleet_Vehicle_inputs{
+    width: 30%;
+    border: 2px solid #FF1E1C !important;
+   
+}
+.vehiclefleet_Vehicle_inputs_inSelected{
+    width: 30%;
+    border: 2px solid #FF1E1C !important;
+    cursor: not-allowed !important;
+}
+.vehiclefleet_submit_button{
+    color: #ffff;
+    background: #FF1E1C;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 8px 12px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.vehiclefleet_submit_button_unSelect{
+    color: #ffff;
+    background: #FF1E1C;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 8px 12px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    opacity: 0.5;
+    cursor:not-allowed !important;
+}
+.vehiclefleet_Vehicle_Available_div_unSelected{
+    opacity: 0.5;
+    cursor: not-allowed !important;
+    user-select: none;
+}
+.vehiclefleet_location_main_div{
+    position: relative;
+}
+.end_location_div{
+    position: relative;
+}
+.end_location_small{
+    position: absolute;
+    left: 12%;
+    top: 100%;
+    color: #FF1E1C;
+}
+
+/* --------------------- Media Query -------------------- */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .vehiclefleet_location_inputs{
+        margin-right: 0px !important;
+    }
+    .vehiclefleet_Vehicle_inputs_end{
+        margin-left: 0px;
+    }
+    .location_div{
+        display: block !important;
+    }
+    .end_location_div{
+        margin-top: 30px;
+    }
+    .vehiclefleet_location_button{
+        margin-left: 10px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .vehiclefleet_location_inputs{
+        margin-right: 0px !important;
+    }
+    .vehiclefleet_Vehicle_inputs_end{
+        margin-left: 0px;
+    }
+    .location_div{
+        display: block !important;
+    }
+    .end_location_div{
+        margin-top: 30px;
+    }
+    .vehiclefleet_location_button{
+        margin-left: 10px;
+        width: 150px;
+    }
+}

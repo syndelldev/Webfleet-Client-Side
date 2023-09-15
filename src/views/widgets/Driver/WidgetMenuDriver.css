@@ -1,0 +1,149 @@
+.driver_dashboard_header_div {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 600px;
+  background-color: rgb(241, 238, 234);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.driver_dashboard_profile_div {
+  flex-basis: 27%;
+  width: 100%;
+  height: auto;
+}
+.driver_dashboard_profile_card_div {
+  width: 95%;
+  height: 80px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgb(227, 92, 92);
+}
+.driver_dashboard_map_div {
+  flex-basis: 70%;
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(173, 102, 102); */
+  border-radius: 15px;
+  margin: 10px;
+}
+.dashboard_current_trip {
+  font-size: 23px;
+  font-weight: 900;
+  color: #ff1e1c;
+  margin-left: 10px;
+}
+.dashboard_current_trip_details {
+  margin-top: 80px;
+}
+.dashborad_location_box {
+  position: relative;
+  width: 95%;
+  height: 150px;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgb(223, 145, 145);
+  padding-left: 20px;
+  padding-top: 7px;
+}
+.driver_reach_location_span {
+  width: 70%;
+  color: #fff;
+  height: auto;
+  position: absolute;
+  top: 34px;
+  left: 50px;
+  font-size: 12px;
+}
+.driver_start_location_span {
+  width: 70%;
+  color: #fff;
+  height: auto;
+  position: absolute;
+  top: 94px;
+  left: 50px;
+  font-size: 12px;
+}
+.dashborad_location_end_box {
+  width: 95%;
+  margin: auto;
+  height: 45px;
+  cursor: pointer;
+  background: rgb(227, 92, 92);
+  color: aliceblue;
+  border-radius: 15px;
+  margin-top: 180px;
+  margin-left: 9px;
+}
+.dashborad_location_end_box_noTrip {
+  cursor: not-allowed !important;
+}
+.dashborad_location_end_box_p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0% !important;
+  padding-top: 7px;
+}
+.driver_reach_location_icon_img {
+  width: 30px;
+  color: #747070;
+  border: 8px solid rgb(227, 92, 92);
+  border-radius: 50%;
+  top: 30px;
+  position: absolute;
+  left: 10px;
+}
+.driver_start_location_icon_img {
+  width: 30px;
+  color: #747070;
+  border: 5px solid rgb(227, 92, 92);
+  background: rgb(227, 92, 92);
+  border-radius: 50%;
+  top: 90px;
+  position: absolute;
+  left: 10px;
+}
+.driver_profile_card_div_data {
+  display: flex;
+  margin-left: 10px;
+  padding: 10px;
+  color: aliceblue;
+}
+.driver_profile_card_div_data_name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0% !important;
+}
+.driver_profile_card_div_data_vehicle {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0% !important;
+}
+.driver_profile_card_div_data_img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.driver_profile_card_img_data {
+  flex-basis: 20%;
+  padding-top: 5px;
+}
+.driver_profile_card_details_data {
+  flex-basis: 80%;
+  margin-left: 10px;
+}
+.dashborad_location_box_noTrip {
+  color: #fff;
+}
+
+/*Moblie Media Query */
+
+@media only screen and (max-width: 767px) and (min-width: 414px) {
+  .dashboardDiv {
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+  }
+}

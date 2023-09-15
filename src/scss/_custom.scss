@@ -1,0 +1,35 @@
+// Here you can add other styles
+.mypagination ul {
+  margin: auto;
+}
+.mypagination li {
+  display: inline-block;
+}
+.mypagination a {
+  color: red;
+  border: none;
+}
+.mypagination .active-link {
+  background-color: red;
+}
+.mypagination .active-link:hover {
+  color: #fff !important;
+}
+.mypagination .page-link:hover {
+  color: red !important;
+}
+
+.invalid-feedback{
+  display: none;
+  width: auto !important;
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #e55353;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  margin-bottom: 6px;
+  background-image: none;
+  border-color: #dc4c64;
+}

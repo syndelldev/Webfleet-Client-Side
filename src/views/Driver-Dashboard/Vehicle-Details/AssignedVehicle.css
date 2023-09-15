@@ -1,0 +1,57 @@
+.main-div{
+    /* background: #f1eeea; */
+    width: 90%;
+    border-radius: 10px;
+    padding: 0px 0px 30px 0px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.assigned-cards{
+    width: 47%;
+    margin: 30px 0px 0px 0px;
+    /* background: #E35c5c; */
+    background: #F7CFCE;
+    /* background-color: #F7CFCE; */
+    border-radius: 10px;
+    border: none;
+    
+}
+.assigned_vehicle_driver_dashboard{
+    font-family: 'GalanoGrotesque' !important;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #ff1e1c;
+    margin-top: 60px;
+}
+.assigned-cards-head{
+    font-family: 'GalanoGrotesque' !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff1e1c;
+
+}
+.assigned-cards-sub{
+    font-size: 1.25rem;
+    padding-top: 5px;
+    font-weight: 500;
+    color: #ff1e1c;
+    font-family: 'GalanoGrotesque' !important;
+
+}
+
+@media screen and (max-width:768px) {
+    .main-div{
+        
+        padding: 0px 30px 30px 30px;
+        
+    }
+    .assigned-cards{
+    width: 500px;
+    }
+}

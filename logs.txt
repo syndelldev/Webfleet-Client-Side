@@ -1,0 +1,49 @@
+-for delete table in 15 days interval
+DELETE FROM my_table WHERE created_at < DATE_SUB(NOW(), INTERVAL 15 DAY);
+ - created_at is column name
+
+
+-for creating new table 
+      CREATE TABLE customers (
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        name VARCHAR(50) NOT NULL,
+        email VARCHAR(100) NOT NULL,
+        phone VARCHAR(20),
+        address VARCHAR(200),
+        PRIMARY KEY (id)
+      );
+
+      -for each loop example
+      const connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'yourusername',
+        password: 'yourpassword',
+        database: 'yourdatabase'
+      });
+
+      // define the list of customer names
+      const customers = ['Alice', 'Bob', 'Charlie'];
+
+      // iterate over the list of customer names
+      customers.forEach(customer => {
+        // construct the SQL query to retrieve the orders for the current customer
+        const query = `SELECT * FROM orders WHERE customer_name = '${customer}'`;
+
+        // execute the query and process the results
+        connection.query(query, (error, results, fields) => {
+          if (error) throw error;
+
+          // do something with the orders (e.g. log them to the console)
+          console.log(`Orders for ${customer}:`);
+          results.forEach(order => {
+            console.log(order);
+          });
+        });
+      });
+
+      // close the database connection when done
+      connection.end();
+
+
+
+const query = `INSERT INTO notifications (message, user_id) VALUES (${logss},${customers})`;

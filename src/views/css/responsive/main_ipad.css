@@ -1,0 +1,80 @@
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+    .user_cost{
+      width: 110px !important;
+    }
+    .user_post{
+      width: 110px !important;
+    }
+    .allUserTable{
+      overflow-x: auto !important;
+      width: 100% !important;
+    }
+    .buttonrightside .drop_click, .buttonrightside .drop_clicks_drop {
+      font-size: 16px; 
+      width: 160px;
+      height: 45px;
+      margin-right: -7px;
+    }
+
+    .input_search{
+      margin-right: 10px;
+    }
+    .input-filed-02{
+      width: auto !important;
+    }
+
+    .buttonvehiclepopup{
+      display: flex !important;      
+    }
+
+    .assignSerachIcon{
+      top: 125px;
+    }
+
+    select.drop_click.form-select {
+      height: auto;
+    }
+    
+    .report_download_btn{
+      width: 55;
+    }
+
+    .vehicle_type, .vehicletype_option {
+      font-size: 12px !important;
+    }
+    
+    .driverTrip_select{
+      font-size: 14px !important;
+    }
+
+    .profile_add_div{
+      height: 68px;
+    }
+  
+    .profile_header{
+      flex-basis: 35% !important;
+    }
+  
+    .profile_body{
+      flex-basis: 62%;
+    }
+
+    .drivercontenor{
+      /* padding: 0px !important; */
+    }
+    
+    .driver_add_main_div{
+      margin: 4% !important;
+    }
+    .add_vehicle_main_sidebar {
+      margin-left: 0rem !important;
+    }
+    .add_vehicle_main_container{
+      margin-right: 0rem !important;
+    }
+
+} 

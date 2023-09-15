@@ -1,0 +1,902 @@
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: local('GalanoGrotesque'),
+    url('../../../assets/font/GalanoGrotesqueAltRegular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GalanoGrotesque';
+  src: local('GalanoGrotesque'),
+    url('../../../assets/font/GalanoGrotesqueRegular.otf') format('truetype');
+}
+
+.line_location {
+  box-sizing: border-box;
+  position: absolute;
+  left: 18px;
+  top: 125px;
+  border-right: 1px solid #b0b0b0 !important;
+  width: 25px;
+  height: 31px;
+  color: #747070;
+}
+
+.div_tracking {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding-top: 63px;
+
+  /* padding-right: 5%; */
+  /* border: 2px solid rgb(55, 255, 0); */
+}
+
+.font_size_location_icon {
+  font-size: 23px;
+  color: #747070;
+}
+.test {
+  margin-bottom: 14px;
+  position: fixed;
+  margin-top: -2px;
+  z-index: 9999;
+  width: 100%;
+  background: #fff;
+}
+
+.divTwo_tracking {
+  flex-basis: 74%;
+  width: 100%;
+  height: 79vh;
+  /* height: auto; */
+  position: relative;
+}
+
+.card-text svg {
+  cursor: pointer;
+}
+
+.card_scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  height: 79vh;
+  /* height: auto; */
+  margin-top: 0px !important;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.trackinf_map_container {
+  /* width: 1438px !important; */
+}
+
+.divOne_tracking {
+  flex-basis: 26% !important;
+  position: relative;
+}
+
+.empty_data_message {
+  position: absolute;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardOne_tracking {
+  background: #ffffff;
+  box-sizing: border-box;
+  /* width: 270px !important; */
+  /* box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5); */
+  border-radius: 12px;
+  flex-basis: 80%;
+  /* height: 42vh !important; */
+  width: 90%;
+  right: 0%;
+  max-width: 18rem;
+  margin: auto;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.cardTwo_tracking {
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+  border-radius: 12px;
+  width: 392px;
+}
+
+.ship_tracking {
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #b0b0b0;
+  margin-top: 5px;
+}
+
+.shipnum_tracking {
+  display: flex;
+  width: 100%;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #232323;
+  align-items: center;
+  margin-top: -5px;
+  justify-content: space-between;
+}
+
+.fa-location-arrow {
+  color: black;
+  background: #30c518;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* .view_all_btn_tracking { */
+/* position: absolute; */
+/* right: 28px; */
+/* top: 90px; */
+/* background: #ff1e1c; */
+/* border-radius: 5px; */
+/* border: none; */
+/* color: #ffffff; */
+/* padding: 10px; */
+/* font-size: 14px; */
+/* gap: 10px; */
+/* height: 40px; */
+/* margin-top: 12px; */
+/* margin-left: 34%; */
+/* margin-right: 10px; */
+/* } */
+
+.view_all_btn_tracking {
+  position: absolute;
+  right: 0;
+  top: 10;
+  background: #ff1e1c;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+  gap: 10px;
+  height: 40px;
+  margin-top: 12px;
+  /* margin-left: 34%; */
+  margin-right: 280px;
+}
+
+.TrackingDetailsCard_table_data {
+  width: 100px;
+  font-weight: 700;
+}
+
+.TrackingDetailsCard_close_btn {
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  color: #ff1e1c;
+  background: #ffffff;
+  box-shadow: 0px 4px 45px 3px rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.serch_tracking {
+  width: 26%;
+}
+
+.TrackingDetailsCard_div {
+  background: #232323;
+  padding: 30px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 125px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 999;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.red_arrow {
+  background: #ff1e1c;
+}
+
+.yellow_arrow {
+  background: #b8a70b;
+}
+
+.status_div {
+  text-align: center;
+  background-color: black;
+  color: #ececec;
+  padding: 2px 14px 2px 0;
+  width: 375px;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.card_tracking {
+  background-color: white;
+  /* border: 1px solid #ececec; */
+  padding: 34px;
+  height: 160px;
+}
+.card_tracking_text_title{
+ color: #b0b0b0;
+
+}
+card_tracking_text_data{
+  
+}
+
+.client_tracking {
+  position: absolute;
+  /* width: 136px;
+    height: 22px;
+    left: 16px;
+    top: 260px; */
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #232323;
+}
+
+.driver_tracking {
+  /* position: absolute; */
+  width: 81px;
+  height: 17px;
+  left: 487px;
+  top: 338px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #484a58;
+}
+/**/
+.reach_location {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  color: #232323;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  width: auto;
+  max-width: 55%;
+  /* border: 1px solid greenyellow; */
+}
+
+.footer_tracking {
+  border-radius: 0px 0 12px 12px !important;
+  border-radius: 0px 0 50px 8px !important;
+  background: #ffffff !important;
+  margin-top: -9%;
+}
+
+.header_tracking {
+  border-radius: 50px 8px 0 0 !important;
+  background: #ffffff !important;
+}
+
+.start_location {
+  position: absolute;
+  top: 160px;
+  left: 70px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  color: #232323;
+  font-size: 16px;
+}
+
+.hover_reach {
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  color: #b0b0b0;
+  position: absolute;
+  top: 130px;
+  left: 70px;
+}
+
+.hover_start {
+  font-size: 10px;
+  color: #b0b0b0;
+  position: absolute;
+  top: 194px;
+  left: 70px;
+}
+
+.end_location_icon {
+  position: absolute;
+  top: 162px;
+}
+
+.reach_location_icon {
+  background: #747070;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  border-radius: 50%;
+  top: 102px;
+  left: 37px;
+}
+
+.retweet_icon_tracking {
+  position: absolute;
+  transform: rotateZ(0deg);
+  right: 61px;
+  bottom: 18px;
+  font-size: 20px;
+  right: 80px;
+}
+
+.retweet_icon_tracking_svg {
+  color: #747070;
+  font-size: 17px;
+  position: relative;
+}
+
+.retweet_icon_tracking_svg:hover .tooltiptext {
+  visibility: visible;
+}
+.retweet_icon_tracking_svg .tooltiptext {
+  visibility: hidden;
+  width: 102px;
+  background-color: #747070;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 160%;
+  left: 242%;
+  margin-left: -120px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.header_divOne {
+  color: #ff1e1c;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 11px;
+  padding-left: 26px;
+  margin-bottom: 10px;
+}
+
+.searchbar_tracking::placeholder {
+  position: absolute;
+  top: 20%;
+}
+.searchbar_tracking {
+  width: 74%;
+  background: #ffffff;
+  border: 1px solid #eceef7;
+  /* border: 1px solid #ff0000; */
+  font-size: 16px;
+  color: #747070;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  justify-content: center;
+  margin-left: 23px;
+  position: sticky;
+  padding-bottom: 10px;
+  margin-top: 23px !important;
+}
+
+.searchbar_tracking ::placeholder {
+  color: #ffffff !important;
+}
+
+.call_icon_tracking {
+  /* background: url('/src/assets/images/Vectorcall.png'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 17px;
+  right: 30px;
+  /* border: 1px solid green; */
+  margin-bottom: 6px;
+  z-index: 999;
+}
+
+.text_icon_tracking {
+  background: url('/src/assets/images/Vectorcall.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 258px;
+  right: 25px;
+}
+
+.allicon {
+  background: #ff1e1c;
+  opacity: 0.2;
+  padding: 20px !important;
+  border-radius: 9.12px;
+}
+
+.reach_icon {
+  /* background: url('/src/assets/images/location.png') !important; */
+  background: #ff1e1c;
+  opacity: 0.2;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+}
+
+/* SCSS CHANGES */
+
+.card {
+  --cui-card-border-color: none !important;
+  --cui-card-border-color: rgb(255, 255, 255) !important;
+}
+
+.mb-3 {
+  background-color: #a700ff !important;
+}
+
+/* DRIVER CARD */
+.driver-card {
+  background: #ffffff;
+  box-sizing: border-box;
+  /* width: 270px !important; */
+  box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+  border-radius: 12px;
+  flex-basis: 80%;
+  max-height: 122px;
+  width: 90%;
+  right: 0%;
+
+  /* border: 0.5px solid rgb(13, 13, 13); */
+
+  padding: 11px 0px 10px 0px;
+}
+
+.driver-card-titles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.driver-card-titles-left {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+  padding-left: 10px;
+}
+
+.drver-card-name-div {
+  height: 35px;
+}
+
+.driver-contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+/* .leaflet-top.leaflet-right .leaflet-routing-container.leaflet-bar.leaflet-control {
+  width: 74% !important;
+  height: 350px !important;
+  overflow-x: hidden !important;
+}
+.leaflet-routing-container .leaflet-bar .leaflet-control {
+  width: 44% !important;
+} */
+/* ------------------------------------- Laptop device -------------------------------------------- */
+/*/ Laptop Media Query /*/
+@media only screen and (min-width: 1561px) {
+  /* Deskotp */
+  .searchbar_tracking {
+    width: 88%;
+  }
+  .serch_tracking {
+    width: 22%;
+  }
+  .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 79vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 1560px) and (min-width: 1441px) {
+  /* / Sir laptop /  */
+  .searchbar_tracking {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .serch_tracking {
+    width: 21%;
+    /* border: 1px solid green; */
+  }
+  .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 79vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+  /* / laptop 1440 x 900 /  */
+}
+@media only screen and (max-width: 1365px) and (min-width: 1280px) {
+  /* / laptop 1280 x 800 / */
+  .serch_tracking {
+    width: 20.5% !important;
+    /* border: 1px solid yellow !important; */
+  }
+}
+@media only screen and (max-width: 1279px) and (min-width: 1180px) {
+  .serch_tracking {
+    width: 19%;
+    /* border: 1px solid yellow; */
+  }
+}
+/* @media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  / Ipad pro 1024 x 1366 / 
+  .serch_tracking {
+    width: 21%;
+    border: 1px solid rgb(60, 255, 0);
+  }
+} */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* / Ipad 768 x 1024 / */
+}
+/* ------------------------------------- Laptop device -------------------------------------------- */
+/* ------------------------------------- Laptop device -------------------------------------------- */
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1450px) {
+  #divTwo_tracking {
+    flex-basis: 80%;
+    height: 90vh !important;
+    width: 100%;
+    right: 0%;
+  }
+
+  .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 79vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  .status_div {
+    width: 375px;
+  }
+
+  /* .div_tracking {
+    display: flex;
+    padding-right: 5%;
+  } */
+  #divTwo_tracking_map {
+    height: 88vh;
+  }
+
+  .searchbar_tracking {
+    width: 89%;
+    margin-left: 5%;
+  }
+  .serch_tracking {
+    width: 20.5%;
+  }
+}
+
+/* ------------------------------------------------- teb & ipad device ------------------------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* .div_tracking {
+    display: flex !important;
+    padding-right: 5%;
+  } */
+
+  #divTwo_tracking_map {
+    height: 94vh;
+    padding-top: 77px;
+    width: 125%;
+  }
+  .view_all_btn_tracking {
+    font-size: 11px;
+    margin-left: 34%;
+    margin-right: 20px;
+  }
+  .header_divOne {
+    background-color: #fff;
+    padding: 20px 16px;
+  }
+
+  .card_tracking {
+    margin-top: -15px;
+    height: 137px;
+  }
+
+  .divOne_tracking .serch_tracking {
+    width: 80%;
+  }
+
+  #divTwo_tracking {
+    height: 92vh;
+    width: 125%;
+    position: absolute;
+    right: -25%;
+    top: 61px;
+  }
+
+  .line_location {
+    left: 10px;
+    top: 107px;
+  }
+
+  .status_div {
+    text-align: center;
+    background-color: black;
+    color: #ececec;
+    padding: 2px 14px 2px 0;
+    width: 67%;
+    margin: auto;
+    border-radius: 5px;
+    position: absolute;
+    right: -87px;
+    top: 29px;
+  }
+
+  .view_all_btn_tracking {
+    z-index: 10;
+    margin-left: 34%;
+    margin-right: 20px;
+  }
+
+  .shipnum_tracking {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .ship_tracking {
+    font-size: 12px;
+  }
+
+  .reach_location {
+    position: absolute;
+    top: 82px;
+    left: 62px;
+    font-size: 13px;
+  }
+
+  .start_location {
+    font-size: 13px;
+    top: 148px;
+    left: 61px;
+  }
+  .reach_location_icon {
+    position: absolute;
+    top: 82px;
+    left: 28px;
+  }
+  .end_location_icon {
+    position: absolute;
+    top: 145px;
+    left: 26px;
+  }
+  .call_icon_tracking {
+    right: 20px;
+    /* border: 1px solid red; */
+  }
+  .retweet_icon_tracking {
+    right: 62px;
+  }
+
+  .client_tracking {
+    font-size: 15px;
+  }
+
+  .cardOne_tracking {
+    margin: 20px auto !important;
+    max-width: 16rem !important;
+  }
+
+  .car_icon {
+    position: absolute;
+    top: 20px;
+    left: 117px;
+    /* background: url(/src/assets/images/truck.png); */
+    width: 80px !important;
+    height: 33px !important;
+    background-size: 50px 50px;
+    background-size: cover;
+  }
+
+  .location_icon {
+    background: url('/src/assets/images/reach.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #ff1e1c;
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+  .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 79vh;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 15px;
+  }
+  /* .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 84vh;
+    padding: 10px;
+  } */
+
+  .cardOne_tracking {
+    margin: 20px auto !important;
+  }
+
+  .searchbar_tracking {
+    width: 88%;
+    margin-left: 5%;
+  }
+
+  /* #divTwo_tracking{
+        height: 52vh !important;
+    } */
+}
+
+/* ---------------------------------------------- mobile device -------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  /* .div_tracking {
+    display: flex;
+    padding-right: 5%;
+  } */
+  .card_scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 35vh;
+  }
+  .shipnum_tracking {
+    margin-top: 5px;
+  }
+  .card_tracking {
+    padding: 44px 11px 40px 34px;
+  }
+
+  #divTwo_tracking_map {
+    height: 43vh;
+    padding-top: 6px;
+    width: 100%;
+  }
+
+  .status_div {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .divOne_tracking {
+    /* flex-basis: 20%; */
+    margin-top: 13%;
+  }
+
+  .searchbar_tracking {
+    width: 88%;
+  }
+
+  /* .searchBarHeader {
+        margin: 0 0 0 20px;
+        height: 39px;
+        width: 146px !important;
+        border-radius: 50px;
+        background-color: #FF1E1C;
+        border: 1px solid #FFFFFF;
+    } */
+
+  #divTwo_tracking {
+    height: 35vh !important;
+  }
+  .trackinf_map_container {
+    /* width: auto !important; */
+  }
+
+  .divOne_tracking {
+    width: 315px !important;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1030px) {
+  #divTwo_tracking {
+    width: 125%;
+  }
+
+  .divOne_tracking .serch_tracking {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 820px) and (max-device-width: 830px) {
+  #divTwo_tracking {
+    width: 125%;
+  }
+
+  .divOne_tracking .serch_tracking {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .car_icon {
+    top: 20px;
+    left: 105px;
+    width: 70px !important;
+  }
+}
+
+.invalid-feedback {
+  display: none;
+
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #e55353;
+}
+
+.TrackingDetailsCard_table_api_data{
+  text-align: center;
+  padding: 0 10px;
+}

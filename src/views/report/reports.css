@@ -1,0 +1,277 @@
+/* celender css */
+.celender-col {
+    width: max-content;
+    display: flex;
+    position: relative;
+}
+
+.celender-col .react-datepicker-wrapper {
+    width: max-content;
+}
+
+/* end */
+.download-btn {
+    width: max-content;
+    margin-left: 10px;
+}
+
+/* .header-toggler {
+    display: block !important;
+} */
+
+.datePicker-sec {
+    display: flex;
+    position: absolute;
+    bottom: -130%;
+    column-gap: 1px;
+}
+
+.Report_download_button {
+
+    width: 200px;
+    background: #FF1E1C;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 10px;
+}
+
+.Report_download_button:hover {
+    background: #FF1E1C !important;
+    color: #fff
+}
+
+.reportsPage .AddUserBtn_btn {
+
+    
+    /* background: #FF1E1C !important;
+    border: none;
+    text-transform: math-auto;
+    width: auto !important;
+    height: auto !important ;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'GalanoGrotesque' !important;
+    padding: 15px 19px;
+    display: flex;
+    align-items: center;
+    text-align: left; */
+}
+
+.reportsTable thead tr th,
+.reportsTable tbody tr td {
+    padding: 20px !important;
+}
+
+.selctDate_btn {
+    text-transform: math-auto;
+}
+
+.reportsPage button.btn.btn-primary.selctDate_btn {
+    background: #FFFFFF;
+    color: #747070;
+    border: 1px solid #ECEEF6;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 11px 19px;
+}
+
+select.form-select.reports_drop-dwown {
+    padding: 12px 12px;
+    font-size: 14px;
+    line-height: 12px;
+    font-weight: 500;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ECEEF6 !important;
+}
+
+.datePicker-sec .datePicker {
+    width: 79px;
+    color: #747070;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin: 0 0px 2px 0;
+}
+
+/* datepicker css for selected,  hover over dates */
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+    border-radius: 0.3rem;
+    background-color: #FF1E1C;
+    color: #fff;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+    border-radius: 0.3rem;
+    background-color: #FF1E1C;
+    color: #fff;
+}
+
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.react-datepicker__month-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.react-datepicker__quarter-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range),
+.react-datepicker__year-text--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+    background-color: #ff201c7c;
+}
+
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-selecting-range:hover,
+.react-datepicker__day--in-range:hover,
+.react-datepicker__month-text--selected:hover,
+.react-datepicker__month-text--in-selecting-range:hover,
+.react-datepicker__month-text--in-range:hover,
+.react-datepicker__quarter-text--selected:hover,
+.react-datepicker__quarter-text--in-selecting-range:hover,
+.react-datepicker__quarter-text--in-range:hover,
+.react-datepicker__year-text--selected:hover,
+.react-datepicker__year-text--in-selecting-range:hover,
+.react-datepicker__year-text--in-range:hover {
+    background-color: #FF1E1C;
+}
+
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+    background: transparent;
+    border-top-right-radius: 0.3rem;
+    border: 0;
+}
+
+.react-datepicker__header {
+    text-align: center;
+    background-color: #fff !important;
+    border: 0 !important;
+    border-top-left-radius: 0.3rem;
+    padding: 8px 0;
+    position: relative;
+}
+
+/* popup css */
+.reporrts-popup-bg {
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255 255 255);
+    border-radius: 20px;
+    position: fixed;
+    top: 10%;
+}
+
+.reportsPopUP {
+    position: relative;
+    height: inherit;
+}
+
+.pop-up-download {
+    position: absolute;
+    bottom: 13%;
+    text-decoration: none;
+}
+
+/* close button css */
+.closebtn {
+    position: absolute;
+    top: 12%;
+    right: 1%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.closebtn .closeicon {
+    width: 24px !important;
+    height: 24px !important;
+    color: #000;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+    .download-btn {
+        margin-left: 0px;
+    }
+
+    .buttons-sec {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
+    }
+
+    .datePicker-sec {
+        flex-direction: column;
+        row-gap: 1px;
+    }
+
+    .datePicker-sec {
+        row-gap: 1px;
+        flex-direction: column;
+        bottom: -164%;
+    }
+
+    .reporrts-popup-bg {
+        top: 5%;
+    }
+
+    .pop-up-download {
+        left: 5%;
+    }
+
+    .closebtn {
+        top: 8%;
+        right: 2%;
+    }
+    .report_tablehead{
+        width: 110px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .datePicker-sec {
+        left: 10%;
+    }
+
+    .reporrts-popup-bg {
+        width: 80vw;
+    }
+
+    .closebtn {
+        top: 8%;
+    }
+    .report_tablehead{
+        width: 110px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+    .reporrts-popup-bg {
+        width: 80vw;
+    }
+
+    .closebtn {
+        top: 6%;
+    }
+
+    .report_tablehead{
+        width: 110px !important;
+    }
+}

@@ -1,0 +1,388 @@
+.line_location {
+  box-sizing: border-box;
+  position: absolute;
+  left: 19px;
+  top: 145px;
+  border-right: 1px solid #b0b0b0 !important;
+  width: 25px;
+  height: 25px;
+  color: #747070;
+}
+.font_size_location_icon {
+  font-size: 23px;
+  color: #747070;
+}
+.div_tracking {
+  display: flex;
+}
+.divOne_tracking {
+  flex-basis: 17% !important  ;
+  margin-top: 2%;
+}
+#divTwo_tracking {
+  height: 79vh !important;
+  /* width: 100% !important; */
+}
+#divTwo_tracking_map {
+  width: 1200px !important;
+}
+.divTwo_tracking {
+  flex-basis: 80%;
+  width: 100%;
+  position: relative;
+}
+
+.cardOne_tracking {
+  background: #ffffff;
+
+  box-sizing: border-box;
+  /* width: 392px; */
+  box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+  border-radius: 12px;
+  /* flex-basis: 80%; */
+  height: 42vh !important;
+  width: 1200px;
+  right: 0%;
+}
+.card-text svg {
+  cursor: pointer;
+}
+
+.cardTwo_tracking {
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+  border-radius: 12px;
+  width: 392px;
+}
+
+.cardOne_tracking {
+  background: #ffffff;
+  box-sizing: border-box;
+
+  box-shadow: 0px 20px 50px rgba(220, 224, 249, 0.5);
+  border-radius: 12px;
+}
+
+.ship_tracking {
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #b0b0b0;
+}
+.shipnum_tracking {
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #232323;
+}
+.card_tracking {
+  background-color: white;
+  border: 1px solid #ececec;
+  padding: 34px;
+  height: 150px;
+}
+
+.client_tracking {
+  position: absolute;
+  /* width: 136px;
+      height: 22px;
+      left: 16px;
+      top: 260px; */
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #232323;
+}
+.driver_tracking {
+  /* position: absolute; */
+  width: 81px;
+  height: 17px;
+  left: 487px;
+  top: 338px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #484a58;
+}
+.footer_tracking {
+  border-radius: 0px 0 12px 12px !important;
+  background: #ffffff !important;
+  margin-top: -9%;
+}
+.header_tracking {
+  border-radius: 12px 12px 0 0 !important;
+  background: #ffffff !important;
+}
+.searchbar_tracking {
+  width: 298px;
+  background: #ffffff;
+  border: 1px solid #eceef7;
+  font-size: 16px;
+  color: #747070;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  justify-content: center;
+  margin-left: 18px;
+  margin-right: 15px;
+  position: sticky;
+  padding-bottom: 10px;
+}
+.searchbar_tracking ::placeholder {
+  color: #ffffff !important;
+}
+
+.text_icon_tracking {
+  background: url('../../assets/images/Vectordelete.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 258px;
+  right: 25px;
+}
+
+.allicon {
+  background: #ff1e1c;
+  opacity: 0.2;
+  padding: 20px !important;
+  border-radius: 9.12px;
+}
+
+.reach_icon {
+  /* background: url('/src/assets/images/location.png') !important; */
+  background: #ff1e1c;
+  opacity: 0.2;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+}
+
+.car_icon {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+  background: url('/src/assets/images/truck.png');
+  width: 100px !important;
+  height: 40px !important;
+  background-size: 50px 50px;
+  background-size: cover;
+}
+.location_icon {
+  background: url('/src/assets/images/reach.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background: #ff1e1c;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.reach_location {
+  position: absolute;
+  top: 110px;
+  left: 70px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  color: #232323;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+}
+.start_location {
+  position: absolute;
+  top: 174px;
+  left: 70px;
+  font-family: 'GalanoGrotesque' !important;
+  font-style: normal;
+  color: #232323;
+  font-size: 16px;
+}
+.hover_reach {
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  color: #b0b0b0;
+  position: absolute;
+  top: 130px;
+  left: 70px;
+}
+.hover_start {
+  font-size: 10px;
+  color: #b0b0b0;
+  position: absolute;
+  top: 194px;
+  left: 70px;
+}
+.end_location_icon {
+  position: absolute;
+  top: 178px;
+}
+.reach_location_icon {
+  background: #747070;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  border-radius: 50%;
+  top: 119px;
+  left: 37px;
+}
+.retweet_icon_tracking {
+  position: absolute;
+  transform: rotateZ(90deg);
+  right: 61px;
+  bottom: 32px;
+  font-size: 20px;
+}
+/* .call_icon_tracking {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  font-size: 20px;
+} */
+.retweet_icon_tracking_svg {
+  color: #ff0000;
+}
+.header_divOne {
+  color: #ff1e1c;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 11px;
+  padding-left: 26px;
+  margin-bottom: 10px;
+}
+.status_div {
+  text-align: center;
+  background-color: black;
+  color: #ececec;
+  padding: 2px 14px 2px 0;
+  width: 32%;
+  margin: auto;
+  border-radius: 5px;
+}
+.fa-location-arrow {
+  color: black;
+  background: #30c518;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.red_arrow {
+  background: #ff1e1c;
+}
+.yellow_arrow {
+  background: #b8a70b;
+}
+/* .view_all_btn_tracking {
+  position: absolute;
+  right: 28px;
+  top: 90px;
+  background: #ff1e1c;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+  gap: 10px;
+} */
+.vehicle-tracking-header {
+  display: flex;
+  justify-content: center;
+  border: 10px solid rgb(0, 255, 34);
+  height: 90px;
+}
+.serch_tracking {
+  width: 26%;
+  border: 1px solid red;
+}
+
+/*Header Vehicle Tracking*/
+
+/* .vehicle-tracking-header {
+  width: 100%;
+  border: 1px solid greenyellow;
+}
+.searchbar-dropdown-flex {
+}
+.vehicle-tracking-searchbar {
+}
+.vehicle-tracking-dropdown {
+}
+.vehicle-tracking-button {
+} */
+
+/*  */
+.TrackingDetailsCard_div {
+  background: #232323;
+  padding: 30px 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 125px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.TrackingDetailsCard_table_data {
+  width: 100px;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------- teb & ipad device ------------------------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .div_tracking {
+    display: block;
+  }
+
+  .searchbar_tracking {
+    width: 92%;
+  }
+  #divTwo_tracking {
+    height: 52vh !important;
+  }
+}
+/* ---------------------------------------------- mobile device -------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .div_tracking {
+    display: block;
+  }
+
+  .divOne_tracking {
+    /* flex-basis: 20%; */
+    margin-top: 13%;
+  }
+  .searchbar_tracking {
+    width: 88%;
+  }
+  .searchBarHeader {
+    margin: 0 0 0 20px;
+    height: 39px;
+    width: 146px !important;
+    border-radius: 50px;
+    background-color: #ff1e1c;
+    border: 1px solid #ffffff;
+  }
+  #divTwo_tracking {
+    height: 50vh !important;
+  }
+}

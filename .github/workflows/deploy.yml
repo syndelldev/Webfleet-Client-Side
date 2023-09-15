@@ -1,0 +1,30 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main # Change this to your main branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+   
+    - uses: actions/checkout@v2
+      
+    - name: Build React app
+      run: npm run build
+      env:
+        CI: false
+      
+    - name: Deploy to cPanel
+      uses: syndelldev/Webfleet-Management-App@4.4.0
+      with:
+        server: ftp.sincprojects.com
+        username: sincpr5
+        password: wr5Xb9857wgq44SdLnkR!
+        protocol: $21
+        local-dir: ./build/
+        remote_path: cd/ # Path to your cPanel public directory
+

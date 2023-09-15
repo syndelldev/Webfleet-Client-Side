@@ -39,8 +39,9 @@ const AppContent = (props) => {
 
   const LoadDriverData = async() => {
     const result = await driverDetails()
-    const driverFilter = result.data.filter((item)=> item.role_id === 0)
-    setDriverData(driverFilter)
+    // const driverFilter = result.data.filter((item)=> item.role_id === 0)
+    console.log(result.data,"result.data")
+    setDriverData(result.data,"result.data")
   }
 
   useEffect(() => {

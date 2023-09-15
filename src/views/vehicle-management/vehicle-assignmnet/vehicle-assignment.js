@@ -27,6 +27,7 @@ import moment from 'moment'
 
 const vehicleassignment = (props) => {
   const { VehicleData, DriverData } = props
+  console.log(DriverData,"DriverData in vehicle")
   const [userDetails, setuserDetails] = useState([])
   const [userSingleData, setuserSingleData] = useState([])
   const [VisibleDeleteValidation, setVisibleDeleteValidation] = useState(false)
@@ -43,6 +44,15 @@ const vehicleassignment = (props) => {
   useEffect(() => {
     setLoading(true)
   }, [])
+
+  const LoadDriverIdleList = () => {
+    const idleDriverFilter = DriverData.filter(
+      (item) => item.assigned_vehicle_number === 'None' && item.status === 'Active',
+    )
+    console.log(idleDriverFilter,"idleDriverFilter")
+    setIdleDriverName(idleDriverFilter)
+
+  }
 
   useEffect(() => {
     LoadDriverIdleList()
@@ -104,13 +114,7 @@ const vehicleassignment = (props) => {
 
   // search function----------------------------------------------------------
 
-  const LoadDriverIdleList = () => {
-    const idleDriverFilter = DriverData.filter(
-      (item) => item.assigned_vehicle_number === 'None' && item.status === 'Active',
-    )
-    setIdleDriverName(idleDriverFilter)
 
-  }
 
   const [FilterValues, setFilterValues] = useState(null)
 

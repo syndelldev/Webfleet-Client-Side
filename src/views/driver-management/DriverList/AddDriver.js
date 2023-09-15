@@ -21,7 +21,6 @@ function Conformpopup(props) {
     status: '',
     description: '',
     assigned_vehicle_number: 'None',
-    registered_at: '',
     // user_Id: '',
     image: '',
     lease_budget_per_month: '',

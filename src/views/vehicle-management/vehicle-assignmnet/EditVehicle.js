@@ -100,6 +100,7 @@ function ConPopups(props) {
 
   // const id = props.data
   const IdleDriverName = props.IdleDriverName
+  console.log(IdleDriverName,"idledriver")
   const deviceId = props.data.device_ident
 
   const onClickclose = () => {
@@ -154,8 +155,9 @@ function ConPopups(props) {
 
   const VehicleUser = async () => {
 
-    if(user.device_ident.trim() === '' ){
+    if(user.device_ident === ''){
       editVehicle()
+      // console.log("hitted")
     }
     else{
       if(user.device_ident !== deviceId){

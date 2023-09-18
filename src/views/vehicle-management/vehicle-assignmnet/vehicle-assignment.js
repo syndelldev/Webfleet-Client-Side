@@ -27,7 +27,7 @@ import moment from 'moment'
 
 const vehicleassignment = (props) => {
   const { VehicleData, DriverData } = props
-  console.log(DriverData,"DriverData in vehicle")
+  console.log(DriverData, "DriverData in vehicle")
   const [userDetails, setuserDetails] = useState([])
   const [userSingleData, setuserSingleData] = useState([])
   const [VisibleDeleteValidation, setVisibleDeleteValidation] = useState(false)
@@ -38,7 +38,7 @@ const vehicleassignment = (props) => {
   const [DeleteUserId, setDeletUser] = useState('')
   const [visibleUpload, setVisibleUpload] = useState(false)
   const [IdleDriverName, setIdleDriverName] = useState([])
-  const [ selectedType, setSelectedType ] = useState('All Vehicle')
+  const [selectedType, setSelectedType] = useState('All Vehicle')
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const vehicleassignment = (props) => {
     const idleDriverFilter = DriverData.filter(
       (item) => item.assigned_vehicle_number === 'None' && item.status === 'Active',
     )
-    console.log(idleDriverFilter,"idleDriverFilter")
+    console.log(idleDriverFilter, "idleDriverFilter")
     setIdleDriverName(idleDriverFilter)
 
   }
@@ -60,7 +60,7 @@ const vehicleassignment = (props) => {
     if (VehicleData.length > 0) {
       setLoading(false)
     }
-    else{
+    else {
       setLoading(true)
 
     }
@@ -72,25 +72,25 @@ const vehicleassignment = (props) => {
   }
   const AssignedVehicledata = () => {
 
-    if(selectedType === 'All Vehicle'){
+    if (selectedType === 'All Vehicle') {
       const filterResult = VehicleData.filter(
-        (item) => item.operator !== '' && item.operator !== 'None' ,
+        (item) => item.operator !== '' && item.operator !== 'None',
       )
       setuserDetails(filterResult)
     }
-    else{
-    const filterResult = VehicleData.filter(
-      (item) => item.operator !== '' && item.operator !== 'None' && item.type === selectedType,
-    )
-    setuserDetails(filterResult)
+    else {
+      const filterResult = VehicleData.filter(
+        (item) => item.operator !== '' && item.operator !== 'None' && item.type === selectedType,
+      )
+      setuserDetails(filterResult)
     }
   }
   const UnassignedVehicledata = () => {
-    if(selectedType === 'All Vehicle'){
-    const filterResult = VehicleData.filter((item) => item.operator === 'None')
-    setuserDetails(filterResult)
+    if (selectedType === 'All Vehicle') {
+      const filterResult = VehicleData.filter((item) => item.operator === 'None')
+      setuserDetails(filterResult)
     }
-    else{
+    else {
       const filterResult = VehicleData.filter((item) => item.operator === 'None' && item.type === selectedType)
       setuserDetails(filterResult)
     }
@@ -143,7 +143,7 @@ const vehicleassignment = (props) => {
           item.operator.toLowerCase().includes(e.target.value.toLowerCase()) ||
           item.taxStatus.toLowerCase().includes(e.target.value.toLowerCase()) ||
           item.motStatus.toLowerCase().includes(e.target.value.toLowerCase()) ||
-          item.dateOfLastV5CIssued.toLowerCase().includes(e.target.value.toLowerCase()) 
+          item.dateOfLastV5CIssued.toLowerCase().includes(e.target.value.toLowerCase())
       )
 
       setuserDetails(filterResult)
@@ -227,7 +227,7 @@ const vehicleassignment = (props) => {
 
   //to pass selected user id
   const editUser = async (data) => {
-    console.log(data,"data assifn")
+    console.log(data, "data assifn")
     setuserSingleData(data)
     setConPopups(true)
   }
@@ -369,61 +369,71 @@ const vehicleassignment = (props) => {
                 <CTableRow>
                   <CTableHeaderCell
                     className="tablecell user_tableHead ps-4"
-                
+
                   >
                     License No
+                  </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 180 }}>
+                    Driver Name
+                  </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead">Make</CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 170 }}>
+                    MOT Status
+                  </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 150 }}>
+                    MOT Expiry Date
+                  </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 120 }}>Tax Status</CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead">
+                    Tax Due Date
                   </CTableHeaderCell>
                   <CTableHeaderCell className="user_tableHead " style={{ width: 100 }}>
                     Year
                   </CTableHeaderCell>
-                  <CTableHeaderCell className="tablecell user_tableHead">Make</CTableHeaderCell>
+
                   <CTableHeaderCell className="tablecell user_tableHead">Fuel Type</CTableHeaderCell>
-                 
-                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: '120px' }}>
-                  Colour
-                  </CTableHeaderCell>
-                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 150 }}>
-                  MOT Expiry Date
-                  </CTableHeaderCell>
+
+
+
                   <CTableHeaderCell className="user_tableHead ps-2" style={{ width: 130 }}>
                     Vehicle Type
                   </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead">
+                    Co2 Emissions
+                  </CTableHeaderCell>
+
+                  <CTableHeaderCell className="tablecell user_tableHead">
+                    Engine Capacity
+                  </CTableHeaderCell>
+                  <CTableHeaderCell className="tablecell user_tableHead">
+                    Last V5C Issued
+                  </CTableHeaderCell>
                   {/* <CTableHeaderCell className="tablecell user_tableHead">Group</CTableHeaderCell> */}
                   <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 160 }}>
-                  Wheel Plan
+                    Wheel Plan
                   </CTableHeaderCell>
-                  {/* <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 170 }}>
-                    Vehicle Drive Type
-                  </CTableHeaderCell> */}
-
-                  <CTableHeaderCell className="tablecell user_tableHead">
-                  Co2 Emissions
-                </CTableHeaderCell>
-
-                  <CTableHeaderCell className="tablecell user_tableHead">
-                  Engine Capacity
-                </CTableHeaderCell>
-
-                  <CTableHeaderCell className="tablecell user_tableHead">
-                    Tax Due Date
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 150 }}>
+                    Type Approval
                   </CTableHeaderCell>
 
-               
-                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width:120 }}>Tax Status</CTableHeaderCell>
-                 <CTableHeaderCell className="tablecell user_tableHead"  style={{ width:170 }}>
-                  	MOT Status
-                </CTableHeaderCell>
-                <CTableHeaderCell className="tablecell user_tableHead">
-                  Last V5C Issued
-                </CTableHeaderCell>
-                <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 250 }}>
-                    Driver Name
+
+
+
+
+
+
+
+
+
+                  <CTableHeaderCell className="tablecell user_tableHead" style={{ width: 220 }}>
+                    Colour
                   </CTableHeaderCell>
 
-                {/* <CTableHeaderCell className="tablecell user_tableHead">
+
+                  {/* <CTableHeaderCell className="tablecell user_tableHead">
                   Date Of Last V5C Issued
                 </CTableHeaderCell> */}
-       
+
                 </CTableRow>
               </CTableHead>
               {currentAllVehicle.map((user) => (
@@ -448,30 +458,41 @@ const vehicleassignment = (props) => {
                     </span> */}
                       {user.registrationNumber}
                     </CTableDataCell>
-                    <CTableDataCell className="tablecell ps-2">{user.yearOfManufacture}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{user.make}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{user.fuelType}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{user.colour}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{moment(user.motExpiryDate).format('DD-MM-yyyy')}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{user.type}</CTableDataCell>
-                  
-                    <CTableDataCell className="tablecell">{user.wheelplan}</CTableDataCell>
-                    <CTableDataCell className="tablecell">{user.co2Emissions}</CTableDataCell>
-
-                    <CTableDataCell className="tablecell">{user.engineCapacity}</CTableDataCell>
-                  
-                  <CTableDataCell className="tablecell">{moment(user.taxDueDate).format('DD-MM-yyyy')}</CTableDataCell>
-                  <CTableDataCell className="tablecell">{user.taxStatus}</CTableDataCell> 
-                  
-                  <CTableDataCell className="tablecell">{user.motStatus}</CTableDataCell>
-                  <CTableDataCell className="tablecell">{moment(user.dateOfLastV5CIssued).format('DD-MM-yyyy')}</CTableDataCell>
-                  
                     <CTableDataCell className="tablecell">
-                      <span>
-                        {/* <img src={drivermod} height={33} width={36} style={{ borderRadius:5 }} className="editavatar" /> */}
-                      </span>
+
                       {user.operator}
                     </CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.make}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.motStatus}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{moment(user.motExpiryDate).format('DD-MM-yyyy')}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.taxStatus}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{moment(user.taxDueDate).format('DD-MM-yyyy')}</CTableDataCell>
+                    <CTableDataCell className="tablecell ps-2">{user.yearOfManufacture}</CTableDataCell>
+
+                    <CTableDataCell className="tablecell">{user.fuelType}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.type}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.co2Emissions}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.engineCapacity}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{moment(user.dateOfLastV5CIssued).format('DD-MM-yyyy')}</CTableDataCell>
+
+
+
+                    <CTableDataCell className="tablecell">{user.wheelplan}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.typeApproval}</CTableDataCell>
+                    <CTableDataCell className="tablecell">{user.colour}</CTableDataCell>
+                   
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <CTableDataCell className="tablecell vihicalemanagemntditcontent">
                       {/* <button
@@ -628,7 +649,7 @@ const vehicleassignment = (props) => {
                 onClick={getBoolianVar}
               />
             )
-          
+
           }
         </div>
       )}

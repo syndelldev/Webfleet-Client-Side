@@ -22,6 +22,8 @@ import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Cookies from 'js-cookie';
 import logoimages from 'src/assets/images/avatars/logo1.ico'
+import LoaderScreen from 'src/views/Loader/LoaderScreen'
+import MainLoaderScreen from 'src/views/Loader/MainLoaderScreen'
 
 const defaultvalue = {
   email: '',
@@ -155,10 +157,7 @@ const Login = () => {
     <div className="bg-light loginpage_div min-vh-100 d-flex flex-row align-items-center ">
       {
         loader === true &&
-        <div className="loader-container-main-screen">
-          <div className="spinner"> </div>
-          <img src={logoimages} style={{ width: 35, height: 35 }} />
-        </div>
+       <MainLoaderScreen/>
       }
       <CContainer className="">
         <CRow className="justify-content-center">

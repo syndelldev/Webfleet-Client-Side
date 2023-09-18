@@ -838,7 +838,7 @@ const Select = (props) => {
                           ></i>
                           <img
                             key={index}
-                            src={`http://localhost:8010/licenseImage/${imageUrl}`}
+                            src={`http://13.43.59.115:8010/licenseImage/${imageUrl}`}
                             alt="License is not uploaded"
                             style={{ width: 250, height: 150, display: 'block', marginTop: 10 }}
                           />

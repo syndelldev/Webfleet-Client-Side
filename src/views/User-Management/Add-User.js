@@ -216,13 +216,13 @@ const usermanagement = (props) => {
                     label="Postcode"
                     name="user_postcode"
                     aria-describedby="inputGroupPrependFeedback"
-                    pattern="[A-Z0-9]{6}"
+                    // pattern="[A-Z0-9]{6}"
                     maxLength={6}
                     onChange={(e) => {
                       onValueChange(e)
                     }}
                     id="validationCustomUsername"
-                    feedbackInvalid="Please provide a valid Cost Centre"
+                    feedbackInvalid="Please provide a valid Postcode"
                     required
                   />
                 </CCol>

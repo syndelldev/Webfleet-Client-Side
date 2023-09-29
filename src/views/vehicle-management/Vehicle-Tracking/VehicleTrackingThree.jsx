@@ -77,8 +77,8 @@ const VehicleTracking = (props) => {
 
     // Add a marker for the user's current location
     const currentLocationIcon = L.icon({
-      iconUrl: newCurrentPin,
-      iconSize: [40, 40],
+      iconUrl: pinCurrentPin,
+      iconSize: [30, 30],
       iconAnchor: [10, 20], // Center the icon's anchor point on the marker's position
     })
 

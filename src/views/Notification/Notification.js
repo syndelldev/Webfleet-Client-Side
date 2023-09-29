@@ -99,6 +99,7 @@ function Aleart(props) {
   
   useEffect(() => {
     const filteredAll = msgList.filter((item) => item.status === 0)
+    console.log(filteredAll,"filteredAll")
     setUnreadMag(filteredAll)
     
 

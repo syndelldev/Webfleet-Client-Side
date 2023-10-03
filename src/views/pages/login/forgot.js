@@ -24,6 +24,7 @@ import CIcon from '@coreui/icons-react'
 import { cilUser } from '@coreui/icons'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import MainLoaderScreen from 'src/views/Loader/MainLoaderScreen'
 const defaultvalue = {
     user_email: '',
 }
@@ -33,6 +34,8 @@ const forgot = () => {
   const [user, setuser] = useState(defaultvalue)
   const [notUser, setnotUser] = useState(false)
   const [VisibleValidation, setVisibleValidation] = useState(false)
+  const [ Loader, setLoader ] = useState(false)
+  const [ SendMailMsg, setSendMailMsg ] = useState('')
 
   // const [showPassword,setshowPassword]=useState(false)
 
@@ -42,11 +45,16 @@ const forgot = () => {
 
   const sendEmail = async(e)=>{
     await sendMail(user).then((res)=>{
+      setLoader(false)
       if(!(res.status === 200)){
        
+        setSendMailMsg("Email has been sent to your Email id, Please check your mail box ")
         setVisibleValidation(true)
+
       }else{
-       
+        setSendMailMsg("There is an error while sending email, Please try again")
+        setVisibleValidation(true)
+
       }
     })
   }
@@ -60,6 +68,8 @@ const forgot = () => {
     if (form.checkValidity() === true) {
       setValidated(true)
       event.preventDefault()
+      setLoader(true)
+
       await userExist(user).then((res) => {
        if(res.status === 203){
         sendEmail();
@@ -83,6 +93,9 @@ const forgot = () => {
 
   return (
     <div className="bg-light loginpage_div min-vh-100 d-flex flex-row align-items-center ">
+      {
+        Loader === true && <MainLoaderScreen/>
+      }
       <CContainer className="">
         <CRow className="justify-content-center">
           <CCol className="login_sidepage" md={8}>
@@ -187,7 +200,8 @@ const forgot = () => {
                   }}
                 >
                   <span style={{ color: 'red', display: 'block', fontSize: '24px' }}>Note</span>
-                 Email has been sent to your Email id, Please check your mail box 
+                  {SendMailMsg}
+                
                   <button
                     style={{
                       backgroundColor: '#FF1E1C',

@@ -47,8 +47,6 @@ const updatePassword = () => {
   const emailID = queryParameters.get("id")
 
   const SecurityToken = queryParameters.get("token")
-  const JWT_secret = "8f9c54d9601dcf25bf0e021115e1fea278"
-  const uniToken = `${JWT_secret}${emailID}`
 
 
   const getPassword = (e) => {
@@ -91,8 +89,6 @@ const updatePassword = () => {
   //function to check whether the user is authentic or not API call
   const credData = {
     token: SecurityToken,
-    unitok: uniToken
-
   }
   const checkUser = async () => {
 

@@ -48,7 +48,7 @@ const WidgetMenu = (props) => {
     var vehicleActive = VehicleData.filter((element) => element.status === 'In-Transit')
     var vehicleMaintenance = VehicleData.filter((element) => element.status === 'In Maintenance')
     var vehicleIdle = VehicleData.filter((element) => element.status === 'Idle' && element.operator === 'None')
-    var vehicleOutOfService = VehicleData.filter((element) => element.status === 'Out of service')
+    var InActiveDrivers = DriverData.filter((element) => element.status === 'In active')
     var vehicalemencount = VehicleData.filter((element) => element.status === 'In Maintenance')
     var idledrivers = DriverData.filter((element) => element.status === 'Active' && element.assigned_vehicle_number === 'None')
     var allDriver = DriverData.filter((element) => element.role_id === 0 )
@@ -167,8 +167,8 @@ const WidgetMenu = (props) => {
                     <CCard className='menu_card' onClick={ServiceWindow}>
                         <CCardBody style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                             <div className='box_points' >
-                                <div className='boxpoints'>{vehicleOutOfService.length}</div>
-                                <div className='box-title'>Out Of Service</div>
+                                <div className='boxpoints'>{InActiveDrivers.length}</div>
+                                <div className='box-title'>In-active Drivers</div>
                             </div>                           
                         </CCardBody>
                     </CCard>
